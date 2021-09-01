@@ -1,0 +1,13 @@
+body a:hover{
+    text-decoration: none;
+}
+
+#webApp .linearicons-smartphone:before {
+    content: "\www" !important;
+}
+
+
+#logoDev .linearicons-pen-add:before {
+    content: "\LOGO";
+    font-size: 2rem;
+}
