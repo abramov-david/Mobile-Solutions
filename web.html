@@ -2,7 +2,7 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
-  <title>About Us</title>
+  <title>Web App</title>
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport"
     content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -12,16 +12,40 @@
   <!-- Stylesheets-->
   <link rel="stylesheet" type="text/css"
     href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    #bossImg {
-      transition: 0.5s ease-in-out;
+    #subTitle {
+      font-size: 1.5rem;
     }
 
-    #bossImg:hover {
-      transform: scale(1.05);
+    .breadcrumbs-custom-title {
+      margin-top: 25px;
+      font-size: 50px;
+      font-weight: 500;
+    }
+
+    #mainIcon {
+      font-size: 70px;
+      animation: mainIcon 2s forwards;
+      transform: translateX(70px);
+      opacity: 0;
+    }
+
+    @keyframes mainIcon {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0%);
+      }
     }
 
     .breadcrumbs-custom-title {
@@ -94,9 +118,9 @@
               <div class="rd-navbar-main-element">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Главная</a>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Главная</a>
                     </li>
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="about-us.html">О нас</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">О нас</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="portfolio.html">Портфолио</a>
                       <!-- RD Navbar Dropdown-->
@@ -213,263 +237,92 @@
     <section class="breadcrumbs-custom-inset">
       <div class="breadcrumbs-custom">
         <div class="container">
-          <h1 class="breadcrumbs-custom-title">О нас</h1>
+          <i class="fa fa-globe-americas" id="mainIcon"></i>
+          <h1 class="breadcrumbs-custom-title">Разработка Web приложений</h1>
         </div>
         <div class="box-position" style="background-image: url(images/bg-elements.jpg);"></div>
       </div>
     </section>
-    <!-- Why choose us-->
-    <section class="section section-sm section-first bg-default text-md-left">
+    <!-- Section single service-->
+    <section class="section section-sm section-first bg-default">
       <div class="container">
-        <div class="row row-50 justify-content-center align-items-xl-center">
-          <div class="col-md-10 col-lg-5 col-xl-6"><img src="images/about-1-519x564.jpg" alt="" width="519"
-              height="564" />
-          </div>
-          <div class="col-md-10 col-lg-7 col-xl-6">
-            <h2 class="text-spacing-25 font-weight-normal title-opacity-9">Почему нас выбирают</h2>
-            <!-- Bootstrap tabs-->
-            <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-4">
-              <!-- Nav tabs-->
-              <ul class="nav nav-tabs">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-4-1"
-                    data-toggle="tab">Опыт</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-4-2"
-                    data-toggle="tab">Навык</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-4-3" data-toggle="tab">Цель</a>
-                </li>
-              </ul>
-              <!-- Tab panes-->
-              <div class="tab-content">
-                <div class="tab-pane fade show active" id="tabs-4-1">
-                  <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Cras ultricies ligula sed magna
-                    dictum porta. Nulla quis lorem ut libero malesuada feugiat. Nulla porttitor accumsan tincidunt. Cras
-                    ultricies ligula sed magna dictum porta.</p>
-                  <!-- Linear progress bar-->
-                  <article class="progress-linear">
-                    <div class="progress-header">
-                      <p>WEB приложения</p>
-                    </div>
-                    <div class="progress-bar-linear-wrap">
-                      <div class="progress-bar-linear"><span class="progress-value">79</span><span
-                          class="progress-marker"></span></div>
-                    </div>
-                  </article>
-                  <!-- Linear progress bar-->
-                  <article class="progress-linear">
-                    <div class="progress-header">
-                      <p>iOS приложения</p>
-                    </div>
-                    <div class="progress-bar-linear-wrap">
-                      <div class="progress-bar-linear"><span class="progress-value">72</span><span
-                          class="progress-marker"></span></div>
-                    </div>
-                  </article>
-                  <!-- Linear progress bar-->
-                  <article class="progress-linear">
-                    <div class="progress-header">
-                      <p>Android приложения</p>
-                    </div>
-                    <div class="progress-bar-linear-wrap">
-                      <div class="progress-bar-linear"><span class="progress-value">88</span><span
-                          class="progress-marker"></span></div>
-                    </div>
-                  </article>
+        <div class="row row-70">
+          <div class="col-lg-8">
+            <div class="single-service">
+              <div id="subTitle">Высоконагруженные и функциональные Web приложения</div>
+              <p class="text-spacing-100">Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh
+                pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+              <!-- Quote Classic-->
+              <article class="quote-classic">
+                <div class="quote-classic-text">
+                  <p class="q">Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum
+                    porta.</p>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-2">
-                  <div class="row row-40 justify-content-center text-center inset-top-10">
-                    <div class="col-sm-4">
-                      <!--Circle progress bar-->
-                      <div class="progress-circle">
-                        <div class="progress-circle-block">
-                          <svg class="progress-circle-bar" x="0" y="0" width="150" height="150" viewbox="0 0 150 150">
-                            <circle class="progress-circle-bg" cx="75" cy="75" r="70"></circle>
-                            <circle class="progress-circle-fg clipped" cx="75" cy="75" r="70"></circle>
-                          </svg>
-                          <div class="progress-circle-counter">87</div>
-                        </div>
-                        <p class="progress-circle-title">разработка</p>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <!--Circle progress bar-->
-                      <div class="progress-circle">
-                        <div class="progress-circle-block">
-                          <svg class="progress-circle-bar" x="0" y="0" width="150" height="150" viewbox="0 0 150 150">
-                            <circle class="progress-circle-bg" cx="75" cy="75" r="70"></circle>
-                            <circle class="progress-circle-fg clipped" cx="75" cy="75" r="70"></circle>
-                          </svg>
-                          <div class="progress-circle-counter">74</div>
-                        </div>
-                        <p class="progress-circle-title">Тестирование</p>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <!--Circle progress bar-->
-                      <div class="progress-circle">
-                        <div class="progress-circle-block">
-                          <svg class="progress-circle-bar" x="0" y="0" width="150" height="150" viewbox="0 0 150 150">
-                            <circle class="progress-circle-bg" cx="75" cy="75" r="70"></circle>
-                            <circle class="progress-circle-fg clipped" cx="75" cy="75" r="70"></circle>
-                          </svg>
-                          <div class="progress-circle-counter">99</div>
-                        </div>
-                        <p class="progress-circle-title">клиентская поддержка</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="group-md group-middle"><a class="button button-width-xl-230 button-primary button-pipaluk"
-                      href="#">Get in touch</a><a
-                      class="button button-width-xl-310 button-default-outline button-wapasha" href="#">Download
-                      presentation</a></div>
+              </article>
+              <p class="text-spacing-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit nisi,
+                pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Vivamus
+                suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis
+                ac lectus.</p>
+              <div class="row row-40 align-items-xl-center">
+                <div class="col-md-6 col-xl-5">
+                  <h5 class="text-spacing-100">Ключевые особенности</h5>
+                  <ul class="list-sm list-marked list-marked-sm list-marked-secondary text-spacing-100">
+                    <li>Удобство использования</li>
+                    <li>Улучшенная производительность</li>
+                    <li>Настраиваемый интерфейс</li>
+                    <li>Кросс-платформенная поддержка</li>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-3">
-                  <p>Cras ultricies ligula sed magna dictum porta. Donec rutrum congue leo eget malesuada. Curabitur non
-                    nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit.
-                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
-                  <div class="text-center text-sm-left offset-top-30">
-                    <ul class="row-16 list-0 list-custom list-marked list-marked-sm list-marked-secondary">
-                      <li>WEB Apps</li>
-                      <li>iOS Apps</li>
-                      <li>UX and Design</li>
-                      <li>Android Apps</li>
-                      <li>DevOps</li>
-                      <li>Logo</li>
-                    </ul>
-                  </div>
-                  <div class="group-md group-middle"><a class="button button-width-xl-230 button-primary button-pipaluk"
-                      href="#">Get in touch</a><a
-                      class="button button-width-xl-310 button-default-outline button-wapasha" href="#">Download
-                      presentation</a></div>
+                <div class="col-md-6 col-xl-7 text-lg-right"><img src="images/single-service-1-418x289.jpg" alt=""
+                    width="418" height="289" />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Latest Projects-->
-    <section class="section section-sm section-fluid bg-default">
-      <div class="container-fluid">
-        <h2>Наша команда</h2>
-        <!-- Team #3-->
-        <section class="section section-sm bg-default">
-          <div class="container">
-            <div class="row row-sm row-30">
-              <div class="col-md-6 col-lg-5 col-xl-6">
-                <!-- Team Creative-->
-                <article class="team-creative"><a class="team-creative-figure" href="#"><img
-                      src="images/team-5-370x366.jpg" alt="" width="370" height="366" id="bossImg" /></a>
-                  <div class="team-creative-caption">
-                    <h5 class="team-creative-name"><a href="#">Ryan Wilson</a></h5>
-                    <p class="team-creative-status">Director of Production</p>
-                    <div class="team-creative-decor-bottom"></div>
-                    <div class="team-creative-decor-left"></div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-5 col-xl-6">
-                <!-- Team Creative-->
-                <article class="team-creative"><a class="team-creative-figure" href="#"><img
-                      src="images/team-6-370x366.jpg" alt="" width="370" height="366" id="bossImg" /></a>
-                  <div class="team-creative-caption">
-                    <h5 class="team-creative-name"><a href="#">Mary Lee</a></h5>
-                    <p class="team-creative-status">Software Developer</p>
-                    <div class="team-creative-decor-bottom"></div>
-                    <div class="team-creative-decor-left"></div>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <!-- What people Say-->
-    <section class="section section-sm section-last bg-default">
-      <div class="container">
-        <h2>What people Say</h2>
-        <!-- Owl Carousel-->
-        <div class="owl-carousel owl-modern" data-items="1" data-stage-padding="15" data-margin="30" data-dots="true"
-          data-animation-in="fadeIn" data-animation-out="fadeOut" data-autoplay="true">
-          <!-- Quote Lisa-->
-          <article class="quote-lisa">
-            <div class="quote-lisa-body"><a class="quote-lisa-figure" href="#"><img class="img-circles"
-                  src="images/user-16-100x100.jpg" alt="" width="100" height="100" /></a>
-              <div class="quote-lisa-text">
-                <p class="q">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                  esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-              <h5 class="quote-lisa-cite"><a href="#">Catherine Williams</a></h5>
-              <p class="quote-lisa-status">Regular Client</p>
-            </div>
-          </article>
-          <!-- Quote Lisa-->
-          <article class="quote-lisa">
-            <div class="quote-lisa-body"><a class="quote-lisa-figure" href="#"><img class="img-circles"
-                  src="images/user-17-100x100.jpg" alt="" width="100" height="100" /></a>
-              <div class="quote-lisa-text">
-                <p class="q">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus
-                  nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur non nulla sit amet
-                  nisl tempus convallis quis ac lectus.</p>
-              </div>
-              <h5 class="quote-lisa-cite"><a href="#">John Smith</a></h5>
-              <p class="quote-lisa-status">Regular Client</p>
-            </div>
-          </article>
-          <!-- Quote Lisa-->
-          <article class="quote-lisa">
-            <div class="quote-lisa-body"><a class="quote-lisa-figure" href="#"><img class="img-circles"
-                  src="images/user-18-100x100.jpg" alt="" width="100" height="100" /></a>
-              <div class="quote-lisa-text">
-                <p class="q">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies
-                  ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus
-                  nibh. Donec rutrum congue leo eget malesuada.</p>
-              </div>
-              <h5 class="quote-lisa-cite"><a href="#">Ann McMillan</a></h5>
-              <p class="quote-lisa-status">Regular Client</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Counter Classic-->
-    <section class="section section-fluid bg-default">
-      <div class="container-fluid">
-        <div class="parallax-container" data-parallax-img="images/bg-counter-2.jpg">
-          <div class="parallax-content section-xl">
-            <div class="container">
-              <div class="row row-50 justify-content-center border-classic">
-                <div class="col-sm-6 col-md-5 col-lg-3">
-                  <div class="counter-classic">
-                    <div class="counter-classic-number"><span class="counter">12</span>
+          <div class="col-lg-4">
+            <!-- Post Sidebar-->
+            <div class="post-sidebar post-sidebar-inset">
+              <div class="row row-lg row-60">
+                <div class="col-sm-6 col-lg-12">
+                  <div class="post-sidebar-item">
+                    <h5>Наши услуги</h5>
+                    <div class="post-sidebar-item-inset inset-right-20">
+                      <ul class="list list-categories">
+                        <li class="heading-4"><a href="web.html">Web App<span></span></a></li>
+                        <li class="heading-4"><a href="android.html">Android App<span></span></a></li>
+                        <li class="heading-4"><a href="ios.html">IOS App<span></span></a></li>
+                        <li class="heading-4"><a href="ux.html">UX Дизайн<span></span></a></li>
+                        <li class="heading-4"><a href="logo.html">Логотип<span></span></a></li>
+                        <li class="heading-4"><a href="devops.html">DevOps <span></span></a></li>
+                      </ul>
                     </div>
-                    <h4 class="counter-classic-title">наград</h4>
                   </div>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-3">
-                  <div class="counter-classic">
-                    <div class="counter-classic-number"><span class="counter">194</span>
+                <div class="col-sm-6 col-lg-12">
+                  <div class="post-sidebar-item">
+                    <h5>Будем на связи</h5>
+                    <div class="post-sidebar-item-inset">
+                      <ul class="list-contacts">
+                        <li>
+                          <div class="unit unit-spacing-xs">
+                            <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                            <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="unit unit-spacing-xs">
+                            <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                            <div class="unit-body"><a class="link-email" href="mailto:#">info@demolink.org</a></div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="unit unit-spacing-xs">
+                            <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
+                            <div class="unit-body"><a class="link-location" href="#">4730 Crystal Springs Dr, Los
+                                Angeles, CA 90027</a></div>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <h4 class="counter-classic-title">создано приложений</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-3">
-                  <div class="counter-classic">
-                    <div class="counter-classic-number"><span class="counter">2</span><span class="symbol">k</span>
-                    </div>
-                    <h4 class="counter-classic-title">клиентов</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-3">
-                  <div class="counter-classic">
-                    <div class="counter-classic-number"><span class="counter">25</span>
-                    </div>
-                    <h4 class="counter-classic-title">разработчиков</h4>
                   </div>
                 </div>
               </div>
@@ -479,27 +332,45 @@
       </div>
     </section>
 
-    <!-- Our clients-->
-    <section class="section section-xl bg-default">
+    <!-- How we work-->
+    <section class="section section-sm bg-default">
       <div class="container">
-        <h2>Our clients</h2>
-        <div class="row row-30 row-sm">
-          <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown" data-wow-delay=".3s"><a class="clients-classic"
-              href="#"><img src="images/clients-1-270x145.png" alt="" width="270" height="145" /></a></div>
-          <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown" data-wow-delay=".2s"><a class="clients-classic"
-              href="#"><img src="images/clients-2-270x145.png" alt="" width="270" height="145" /></a></div>
-          <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown" data-wow-delay=".1s"><a class="clients-classic"
-              href="#"><img src="images/clients-3-270x145.png" alt="" width="270" height="145" /></a></div>
-          <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInDown"><a class="clients-classic" href="#"><img
-                src="images/clients-4-270x145.png" alt="" width="270" height="145" /></a></div>
-          <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp"><a class="clients-classic" href="#"><img
-                src="images/clients-5-270x145.png" alt="" width="270" height="145" /></a></div>
-          <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp" data-wow-delay=".1s"><a class="clients-classic"
-              href="#"><img src="images/clients-6-270x145.png" alt="" width="270" height="145" /></a></div>
-          <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp" data-wow-delay=".2s"><a class="clients-classic"
-              href="#"><img src="images/clients-7-270x145.png" alt="" width="270" height="145" /></a></div>
-          <div class="col-sm-6 col-md-4 col-xl-3 wow fadeInUp" data-wow-delay=".3s"><a class="clients-classic"
-              href="#"><img src="images/clients-8-270x145.png" alt="" width="270" height="145" /></a></div>
+        <h3>КАК МЫ РАБОТАЕМ</h3>
+        <div class="row row-30 row-sm justify-content-center box-ordered">
+          <div class="col-sm-7 col-md-12 col-lg-3">
+            <article class="box-icon-leah">
+              <div class="box-icon-leah-icon fl-bigmug-line-pin42"></div>
+              <h5 class="box-icon-leah-title"><a href="single-service.html">Консультация</a></h5>
+              <p class="box-icon-leah-text">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non
+                nulla. </p>
+              <div class="box-icon-leah-count box-ordered-item"></div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-md-5 col-lg-3">
+            <article class="box-icon-leah">
+              <div class="box-icon-leah-icon fl-bigmug-line-chat55"></div>
+              <h5 class="box-icon-leah-title"><a href="single-service.html">Создание концепции</a></h5>
+              <p class="box-icon-leah-text">Proin eget tortor risus. Vivamus magna justo, lacinia eget, convallis at
+                tellus.</p>
+              <div class="box-icon-leah-count box-ordered-item"></div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-md-5 col-lg-3">
+            <article class="box-icon-leah">
+              <div class="box-icon-leah-icon fl-bigmug-line-checkmark15"></div>
+              <h5 class="box-icon-leah-title"><a href="single-service.html">Разработка</a></h5>
+              <p class="box-icon-leah-text">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+              <div class="box-icon-leah-count box-ordered-item"></div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-md-5 col-lg-3">
+            <article class="box-icon-leah">
+              <div class="box-icon-leah-icon fl-bigmug-line-copy23"></div>
+              <h5 class="box-icon-leah-title"><a href="single-service.html">Гарантия качества</a></h5>
+              <p class="box-icon-leah-text">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+              <div class="box-icon-leah-count box-ordered-item"></div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
