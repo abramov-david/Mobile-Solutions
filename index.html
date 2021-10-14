@@ -20,6 +20,36 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
   <style>
+    .ourAdvantagesBlock {
+      margin-bottom: 150px;
+    }
+
+    .blockTitle {
+      font-size: 1.3rem;
+    }
+
+    .indexIcons {
+      transition: ease-in-out 0.5s;
+      color: black;
+    }
+
+    .indexIcons:hover {
+      color: #584cdf !important;
+    }
+
+    .box-icon-modern:hover {
+      box-shadow: 0 0 13px -4px #584cdf !important;
+    }
+
+    .navbarTitle {
+      color: #584cdf;
+      font-weight: 800;
+    }
+
+    .sliderText {
+      font-size: 1rem;
+    }
+
     #navBtn {
       font-size: 10px;
       padding: 8px;
@@ -72,8 +102,10 @@
                 <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                 <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
-                      src="images/logo-default-191x52.png" alt="" width="191" height="52" /></a></div>
+                <div class="rd-navbar-brand"><a class="brand" href="index.html">
+                    <!-- <img src="images/logo-default-191x52.png" alt="" width="191" height="52" /> -->
+                    <h3 class="navbarTitle">Mobile Solutions</h3>
+                  </a></div>
               </div>
               <div class="rd-navbar-main-element">
                 <div class="rd-navbar-nav-wrap">
@@ -193,12 +225,13 @@
           <div class="swiper-slide-caption section-md">
             <div class="container">
               <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Разработка мобильных приложений</h1>
-              <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Разрабатываем
+              <p class="text-width-large sliderText" data-caption-animate="fadeInRight" data-caption-delay="100">
+                Разрабатываем
                 приложения любой сложности и функционала для малого и среднего бизнеса, корпораций и стартапов. Поможем
                 создать или доработать ваш бизнес-проект в быстрорастущей мобильной среде IOS и Android.
-              </p><a class="button button-primary button-ujarak"
+                <!-- </p><a class="button button-primary button-ujarak"
                 href="https://www.templatemonster.com/website-templates/dreamsoft-software-development-company-multipage-website-template-71028.html"
-                target="_blank" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a>
+                target="_blank" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a> -->
             </div>
           </div>
         </div>
@@ -206,14 +239,15 @@
           <div class="swiper-slide-caption section-md">
             <div class="container">
               <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Команда профессионалов</h1>
-              <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100"> Mobile Solutions
+              <p class="text-width-large sliderText" data-caption-animate="fadeInRight" data-caption-delay="100"> Mobile
+                Solutions
                 – это по-настоящему крутые разработчики программного обеспечения: архитекторы, аналитики, программисты,
                 тестировщики, системные инженеры и менеджеры с успешным опытом реализации и запуска международных и
                 российских проектов. Нашу компанию отличает высочайший уровень, креативность, гибкость, открытость,
-                честность, ориентация на безупречное качество и стремление сделать невозможное возможным.</p><a
+                <!-- честность, ориентация на безупречное качество и стремление сделать невозможное возможным.</p><a
                 class="button button-primary button-ujarak"
                 href="https://www.templatemonster.com/website-templates/dreamsoft-software-development-company-multipage-website-template-71028.html"
-                target="_blank" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a>
+                target="_blank" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a> -->
             </div>
           </div>
         </div>
@@ -221,13 +255,14 @@
           <div class="swiper-slide-caption section-md">
             <div class="container">
               <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Полезные приложения</h1>
-              <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Наши продукты
+              <p class="text-width-large sliderText" data-caption-animate="fadeInRight" data-caption-delay="100">Наши
+                продукты
                 всегда работают на результат. Они надежны, эксклюзивны, интуитивно понятны для пользователей, отличаются
                 широкой интеграцией, функциональностью и современным дизайном. Мы помогаем бизнесам расти и
                 зарабатывать.
-              </p><a class="button button-primary button-ujarak"
+                <!-- </p><a class="button button-primary button-ujarak"
                 href="https://www.templatemonster.com/website-templates/dreamsoft-software-development-company-multipage-website-template-71028.html"
-                target="_blank" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a>
+                target="_blank" data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a> -->
             </div>
           </div>
         </div>
@@ -246,66 +281,85 @@
     <section class="section section-sm section-first bg-default text-center">
       <div class="container">
         <div class="row row-30 justify-content-center">
-          <div class="col-sm-4 wow fadeInRight" data-wow-delay=".1s">
-            <article class="box-icon-modern" id="webApp">
-              <div class="box-icon-modern-icon linearicons-smartphone"></div>
-              <h5 class="box-icon-modern-title"><a href="single-service.html">Web приложения</a></h5>
-              <div class="box-icon-modern-decor"></div>
-              <p class="box-icon-modern-text">Корпоративные, аналитические, CRM системы, маркетплейсы, образовательные
-                платформы и многое другое. У нас достаточно компетенций, возможностей и навыков, чтобы реализовать любые
-                потребности в цифровизации бизнес-процессов, настроить их под конкретные задачи.</p>
-            </article>
+          <div class="col-sm-4 wow fadeInRight workBlock" data-wow-delay=".1s">
+            <a href="web.html">
+              <article class="box-icon-modern indexIcons" id="webApp">
+                <div class="box-icon-modern-icon linearicons-smartphone"></div>
+                <p class="box-icon-modern-title blockTitle">Web приложения
+                </p>
+                <div class="box-icon-modern-decor"></div>
+                <p class="box-icon-modern-text">Корпоративные, аналитические, CRM системы, маркетплейсы, образовательные
+                  платформы и многое другое. У нас достаточно компетенций, возможностей и навыков, чтобы реализовать
+                  любые
+                  потребности в цифровизации бизнес-процессов, настроить их под конкретные задачи.</p>
+              </article>
+            </a>
           </div>
           <div class="col-sm-4 wow fadeInRight" data-wow-delay=".1s">
-            <article class="box-icon-modern">
-              <div class="box-icon-modern-icon linearicons-smartphone"></div>
-              <h5 class="box-icon-modern-title"><a href="single-service.html">Android приложения</a></h5>
-              <div class="box-icon-modern-decor"></div>
-              <p class="box-icon-modern-text">Сотни миллионов пользователей еженедельно заходят в магазины приложений на
-                базе Android. Они - ваши потенциальные клиенты. Просто расскажите, что вы готовы предложить, и мы
-                поможем стать частью высокодоходной цифровой среды.</p>
-            </article>
+            <a href="android.html">
+              <article class="box-icon-modern indexIcons">
+                <div class="box-icon-modern-icon linearicons-smartphone"></div>
+                <p class="box-icon-modern-title blockTitle">Android приложения</p>
+                <div class="box-icon-modern-decor"></div>
+                <p class="box-icon-modern-text">Сотни миллионов пользователей еженедельно заходят в магазины
+                  приложений
+                  на
+                  базе Android. Они - ваши потенциальные клиенты. Просто расскажите, что вы готовы предложить, и мы
+                  поможем стать частью высокодоходной цифровой среды.</p>
+              </article>
+            </a>
           </div>
           <div class="col-sm-4 wow fadeInRight" data-wow-delay=".1s">
-            <article class="box-icon-modern">
-              <div class="box-icon-modern-icon linearicons-desktop"></div>
-              <h5 class="box-icon-modern-title"><a href="single-service.html">iOS/MacOS приложения</a></h5>
-              <div class="box-icon-modern-decor"></div>
-              <p class="box-icon-modern-text">Реализуем с нуля мобильные решения, которые легко интегрируются с
-                последними достижениями платформ Apple: IOS, iPadOS, MacOS, tvOS и watchOS. Доведем до совершенства
-                нестабильно работающий или устаревший продукт.</p>
-            </article>
+            <a href="ios.html">
+              <article class="box-icon-modern indexIcons">
+                <div class="box-icon-modern-icon linearicons-desktop"></div>
+                <p class="box-icon-modern-title blockTitle">iOS/MacOS приложения</p>
+                <div class="box-icon-modern-decor"></div>
+                <p class="box-icon-modern-text">Реализуем с нуля мобильные решения, которые легко интегрируются с
+                  последними достижениями платформ Apple: IOS, iPadOS, MacOS, tvOS и watchOS. Доведем до совершенства
+                  нестабильно работающий или устаревший продукт.</p>
+              </article>
+            </a>
           </div>
           <div class="col-sm-4 wow fadeInRight" data-wow-delay=".1s">
-            <article class="box-icon-modern">
-              <div class="box-icon-modern-icon linearicons-pen-add"></div>
-              <h5 class="box-icon-modern-title"><a href="single-service.html">UX разработка</a></h5>
-              <div class="box-icon-modern-decor"></div>
-              <p class="box-icon-modern-text">Наши дизайнеры знают, как сделать программный продукт неповторимым и
-                запоминающимся, но при этом функциональным, удобным для клиента и продающим. Безупречная логика,
-                творческий подход, понятный и эстетичный интерфейс, легкость на пути к цели – основа дизайна от компании
-                Mobile Solutions.</p>
-            </article>
+            <a href="ux.html">
+              <article class="box-icon-modern indexIcons">
+                <div class="box-icon-modern-icon linearicons-pen-add"></div>
+                <p class="box-icon-modern-title blockTitle">UX разработка</p>
+                <div class="box-icon-modern-decor"></div>
+                <p class="box-icon-modern-text">Наши дизайнеры знают, как сделать программный продукт неповторимым и
+                  запоминающимся, но при этом функциональным, удобным для клиента и продающим. Безупречная логика,
+                  творческий подход, понятный и эстетичный интерфейс, легкость на пути к цели – основа дизайна от
+                  компании
+                  Mobile Solutions.</p>
+              </article>
+            </a>
           </div>
           <div class="col-sm-4 wow fadeInRight" data-wow-delay=".2s">
-            <article class="box-icon-modern" id='logoDev'>
-              <div class="box-icon-modern-icon linearicons-pen-add"></div>
-              <h5 class="box-icon-modern-title"><a href="single-service.html">Разработка логотипа</a></h5>
-              <div class="box-icon-modern-decor"></div>
-              <p class="box-icon-modern-text">Лицо каждого человека уникально и узнаваемо. Логотип – это лицо компании.
-                На этих принципах базируется наша работа по созданию неповторимого образа вашего бизнеса. Мы только
-                добавим к этому безукоризненное сочетание красоты, цвета, форм и смысла, чтобы наполнить его жизнью.</p>
-            </article>
+            <a href="logo.html">
+              <article class="box-icon-modern indexIcons" id='logoDev'>
+                <div class="box-icon-modern-icon linearicons-pen-add"></div>
+                <p class="box-icon-modern-title blockTitle">Разработка логотипа</p>
+                <div class="box-icon-modern-decor"></div>
+                <p class="box-icon-modern-text">Лицо каждого человека уникально и узнаваемо. Логотип – это лицо
+                  компании.
+                  На этих принципах базируется наша работа по созданию неповторимого образа вашего бизнеса. Мы только
+                  добавим к этому безукоризненное сочетание красоты, цвета, форм и смысла, чтобы наполнить его жизнью.
+                </p>
+              </article>
+            </a>
           </div>
           <div class="col-sm-4 wow fadeInRight" data-wow-delay=".3s">
-            <article class="box-icon-modern">
-              <div class="box-icon-modern-icon linearicons-outbox"></div>
-              <h5 class="box-icon-modern-title"><a href="single-service.html">DevOps поддержка</a></h5>
-              <div class="box-icon-modern-decor"></div>
-              <p class="box-icon-modern-text">Бесшовная организация всех процессов разработки - от проектирования до
-                поддержки готового продукта. Обеспечим быстрый выход на рынок, адаптацию к меняющимся условиям и
-                конкуренции, стабильность программного решения, сокращение времени восстановления.</p>
-            </article>
+            <a href="devops.html">
+              <article class="box-icon-modern indexIcons">
+                <div class="box-icon-modern-icon linearicons-outbox"></div>
+                <p class="box-icon-modern-title blockTitle">DevOps поддержка</p>
+                <div class="box-icon-modern-decor"></div>
+                <p class="box-icon-modern-text">Бесшовная организация всех процессов разработки - от проектирования до
+                  поддержки готового продукта. Обеспечим быстрый выход на рынок, адаптацию к меняющимся условиям и
+                  конкуренции, стабильность программного решения, сокращение времени восстановления.</p>
+              </article>
+            </a>
           </div>
         </div>
       </div>
@@ -335,7 +389,7 @@
 
 
     <!-- You dream — we embody-->
-    <section class="section section-sm bg-default text-md-left">
+    <section class="section section-sm bg-default text-md-left ourAdvantagesBlock">
       <div class="container">
         <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
           <div class="col-lg-6 col-xl-5 wow fadeInLeft">
@@ -359,30 +413,25 @@
                   <h5 class="font-weight-normal">УНИКАЛЬНОСТЬ ПРОДУКТОВ</h5>
                   <p>Все, что мы делаем – выверено и продумано до мелочей, начиная с визуальной части и заканчивая
                     техническими нюансами. Вы получите авторский продукт, ювелирно настроенный под конкретные цели.</p>
-                  <div class="group-sm group-middle"><a class="button button-default-outline button-wapasha"
-                      href="#">Download presentation</a></div>
+
                 </div>
                 <div class="tab-pane fade" id="tabs-6-2">
                   <h5 class="font-weight-normal">ВЫСОКАЯ ПРОИЗВОДИТЕЛЬНОСТЬ</h5>
                   <p>Это в равной степени относится и к программным разработкам компании Mobile Solutions,и к команде
                     разработки. Следуя тенденциям современного мира, они априори заточены на большую нагрузку, с которой
                     отлично справляются.</p>
-                  <div class="group-sm group-middle"><a class="button button-default-outline button-wapasha"
-                      href="#">Download presentation</a></div>
+
                 </div>
                 <div class="tab-pane fade" id="tabs-6-3">
                   <h5 class="font-weight-normal">КЛИЕНТСКИЙ СЕРВИС</h5>
                   <p>Каждый клиент бесценен, поэтому мы на связи 24/7. Обеспечим поддержку и развитие созданного
                     программного обеспечения, ответим на любые вопросы.</p>
-                  <div class="group-sm group-middle"><a class="button button-default-outline button-wapasha"
-                      href="#">Download presentation</a></div>
+
                 </div>
                 <div class="tab-pane fade" id="tabs-6-4">
                   <h5 class="font-weight-normal">УДОБСТВО ИСПОЛЬЗОВАНИЯ</h5>
                   <p>Мы скрупулёзно прорабатываем архитектуру и дизайн приложений. Они максимально понятны и комфортны
                     для пользователя, что обеспечит постоянный приток новых клиентов. </p>
-                  <div class="group-sm group-middle"><a class="button button-default-outline button-wapasha"
-                      href="#">Download presentation</a></div>
                 </div>
               </div>
             </div>
@@ -390,71 +439,6 @@
           <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay=".1s">
             <div class="col-sm-12"><img src="images/index-1-415x592.jpg" alt="" width="261" height="484" />
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- What people Say-->
-    <section class="section section-sm section-bottom-70 section-fluid bg-default">
-      <div class="container-fluid">
-        <h2>ЧТО О НАС ГОВОРЯТ ЛЮДИ</h2>
-        <div class="row row-50 row-sm">
-          <div class="col-md-6 col-xl-4 wow fadeInRight">
-            <!-- Quote Modern-->
-            <article class="quote-modern quote-modern-custom">
-              <div class="unit unit-spacing-md align-items-center">
-                <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles"
-                      src="images/user-11-75x75.jpg" alt="" width="75" height="75" /></a></div>
-                <div class="unit-body">
-                  <h4 class="quote-modern-cite"><a href="#">Маруся Пупкина</a></h4>
-                  <p class="quote-modern-status">Постоянный клиент</p>
-                </div>
-              </div>
-              <div class="quote-modern-text">
-                <p class="q">
-                  MobileSolutions - выполняет работу на высоком уровне. Разработчики обладают навыком работы с Microsoft
-                  Azure,
-                  .NET. Компания даёт гарантию качества. MobileSolutions стала нашим верным деловым партнером за
-                  последние три года. </p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
-            <!-- Quote Modern-->
-            <article class="quote-modern quote-modern-custom">
-              <div class="unit unit-spacing-md align-items-center">
-                <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles"
-                      src="images/user-12-75x75.jpg" alt="" width="75" height="75" /></a></div>
-                <div class="unit-body">
-                  <h4 class="quote-modern-cite"><a href="#">Владимир Ясносолнышко</a></h4>
-                  <p class="quote-modern-status">Постоянный клиент</p>
-                </div>
-              </div>
-              <div class="quote-modern-text">
-                <p class="q"> MobileSolutions - обеспечила нам высокопрофессиональную команду разработчиков для нашего
-                  банковского проекта. Команда показала отличный результат без лишних затрат бюджета и времени, что
-                  не может не радовать.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
-            <!-- Quote Modern-->
-            <article class="quote-modern quote-modern-custom">
-              <div class="unit unit-spacing-md align-items-center">
-                <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles"
-                      src="images/user-20-75x75.jpg" alt="" width="75" height="75" /></a></div>
-                <div class="unit-body">
-                  <h4 class="quote-modern-cite"><a href="#">Саманта Коричневая</a></h4>
-                  <p class="quote-modern-status">Постоянный клиент</p>
-                </div>
-              </div>
-              <div class="quote-modern-text">
-                <p class="q">MobileSolutions - это высококвалифицированная и обладающая уникальными возможностями
-                  компания с множеством талантливых сотрудников. Мы сотрудничали в нескольких различных проектах,
-                  которые имели большой успех.</p>
-              </div>
-            </article>
           </div>
         </div>
       </div>
@@ -468,8 +452,12 @@
         <div class="row justify-content-center row-30">
           <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">
             <div class="box-footer box-footer-small">
-              <div class="footer-brand"><a href="index.html"><img src="images/logo-inverse-191x52.png" alt=""
-                    width="191" height="52" /></a></div>
+              <div class="footer-brand">
+                <a href="index.html">
+                  <!-- <img src="images/logo-inverse-191x52.png" alt="" width="191" height="52" /> -->
+                  <h2>Mobile Solutions</h2>
+                </a>
+              </div>
               <p class="text-width-medium">Наша компания специализируется на создании функционального, удобного и
                 надежного программного обеспечения для бизнеса любого уровня в любой сфере. В составе команды Mobile
                 Solutions находятся только высококвалифицированные специалисты с опытом реализации крупных международных
