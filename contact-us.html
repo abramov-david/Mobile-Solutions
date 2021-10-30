@@ -1,356 +1,627 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
+  <head>
+    <title>Contacts Us 2</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Stylesheets-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      #button-ru {
+        background: #584cdf;
+        color: whitesmoke;
+      }
+      .multiLang {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .multiLang-button {
+        position: relative;
+        border: none;
+        transition: 0.3s ease-in-out;
+      }
+      .navbarTitle {
+        color: #584cdf;
+        font-weight: 800;
+      }
 
-<head>
-  <title>Contacts Us 2</title>
-  <meta name="format-detection" content="telephone=no">
-  <meta name="viewport"
-    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <!-- Stylesheets-->
-  <link rel="stylesheet" type="text/css"
-    href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    .navbarTitle {
-      color: #584cdf;
-      font-weight: 800;
-    }
+      #navBtn {
+        font-size: 10px;
+        padding: 8px;
+      }
 
-    #navBtn {
-      font-size: 10px;
-      padding: 8px;
-    }
-
-    .breadcrumbs-custom-title {
-      animation: mainIcon 2s forwards;
-      opacity: 0;
-    }
-
-    @keyframes mainIcon {
-      from {
+      .breadcrumbs-custom-title {
+        animation: mainIcon 2s forwards;
         opacity: 0;
-        transform: translateX(-10%);
       }
 
-      to {
-        opacity: 1;
-        transform: translateX(0%);
+      @keyframes mainIcon {
+        from {
+          opacity: 0;
+          transform: translateX(-10%);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0%);
+        }
       }
-    }
 
-    .ie-panel {
-      display: none;
-      background: #212121;
-      padding: 10px 0;
-      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
-      clear: both;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
+      .ie-panel {
+        display: none;
+        background: #212121;
+        padding: 10px 0;
+        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+        clear: both;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
 
-    html.ie-10 .ie-panel,
-    html.lt-ie-10 .ie-panel {
-      display: block;
-    }
-  </style>
-</head>
+      html.ie-10 .ie-panel,
+      html.lt-ie-10 .ie-panel {
+        display: block;
+      }
+    </style>
+  </head>
 
-<body>
-  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
-        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
-        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
-  </div>
-  <div class="preloader">
-    <div class="preloader-body">
-      <div class="cssload-container"><span></span><span></span><span></span><span></span>
+  <body>
+    <div class="ie-panel">
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/"
+        ><img
+          src="images/ie8-panel/warning_bar_0000_us.jpg"
+          height="42"
+          width="820"
+          alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
+      /></a>
+    </div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <span></span><span></span><span></span><span></span>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="page">
-    <!-- Page Header-->
-    <header class="section page-header">
-      <!-- RD Navbar-->
-      <div class="rd-navbar-wrap">
-        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
-          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
-          data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
-          data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
-          data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
-          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-          <div class="rd-navbar-main-outer">
-            <div class="rd-navbar-main">
-              <!-- RD Navbar Panel-->
-              <div class="rd-navbar-panel">
-                <!-- RD Navbar Toggle-->
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand" href="index.html">
-                    <!-- <img src="images/logo-default-191x52.png" alt="" width="191" height="52" /> -->
-                    <h3 class="navbarTitle">Mobile Solutions</h3>
-                  </a></div>
-              </div>
-              <div class="rd-navbar-main-element">
-                <div class="rd-navbar-nav-wrap">
-                  <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Главная</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">О нас</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="portfolio.html">Портфолио</a>
-                      <!-- RD Navbar Dropdown-->
-                      <ul class="rd-menu rd-navbar-megamenu">
-                        <li class="rd-megamenu-item">
-                          <div>
-                            <h5 class="rd-megamenu-title"> Наши направления</h5>
-                            <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="web.html">Web
-                                  App</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
-                                  href="android.html">Android App</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="ios.html">IOS
-                                  App</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="ux.html">UX
-                                  Design</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
-                                  href="logo.html">Logo</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
-                                  href="devops.html">Поддержка DevOps</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="rd-megamenu-item rd-megamenu-carousel">
-                          <div>
-                            <h4 class="rd-megamenu-title">Наши проекты </h4>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav
+            class="rd-navbar rd-navbar-classic"
+            data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed"
+            data-md-device-layout="rd-navbar-fixed"
+            data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-fixed"
+            data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static"
+            data-xxl-layout="rd-navbar-static"
+            data-xxl-device-layout="rd-navbar-static"
+            data-lg-stick-up-offset="46px"
+            data-xl-stick-up-offset="46px"
+            data-xxl-stick-up-offset="46px"
+            data-lg-stick-up="true"
+            data-xl-stick-up="true"
+            data-xxl-stick-up="true"
+          >
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button
+                    class="rd-navbar-toggle"
+                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                  >
+                    <span></span>
+                  </button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <a class="brand" href="index.html">
+                      <!-- <img src="images/logo-default-191x52.png" alt="" width="191" height="52" /> -->
+                      <h3 class="navbarTitle">Mobile Solutions</h3>
+                    </a>
+                  </div>
+                  <div class="multiLang">
+                    <button
+                      id="button-ru"
+                      class="multiLang-button"
+                      onclick="setLang('ru');changeRuButton()"
+                    >
+                      RU
+                    </button>
+                    <button
+                      id="button-eng"
+                      class="multiLang-button"
+                      onclick="setLang('eng');changeEngButton();"
+                    >
+                      ENG
+                    </button>
+                    <hr
+                      width="150%"
+                      text-align="center"
+                      style="margin-right: 0"
+                    />
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html">Главная</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="about-us.html">О нас</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="portfolio.html"
+                          >Портфолио</a
+                        >
 
-                            <!-- Owl Carousel-->
-                            <div class="owl-carousel owl-navbar" data-items="1" data-xl-items="2" data-xxl-items="3"
-                              data-margin="16" data-dots="true" data-autoplay="false" data-loop="false">
-                              <!-- Thumbnail Classic-->
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/esim.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/esim.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/esim.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">ESIM</a></p>
-                                </div>
-                              </article>
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/cayman.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/cayman.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/cayman.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">CAYMAN'S HELL</a></p>
-                                </div>
-                              </article>
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/maumarket.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/maumarket.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/maumarket.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">Mau-market</a></p>
-                                </div>
-                              </article>
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/mycar.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/mycar.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/mycar.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">MY CAR</a></p>
-                                </div>
-                              </article>
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/sploteam.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/sploteam.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/sploteam.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">SPLOTEAM</a></p>
-                                </div>
-                              </article>
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/utg.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/utg.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/utg.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">UTG AVIA</a></p>
-                                </div>
-                              </article>
+                        <!-- RD Navbar Dropdown-->
+                        <ul class="rd-menu rd-navbar-megamenu">
+                          <li class="rd-megamenu-item">
+                            <div>
+                              <h5 class="rd-megamenu-title">
+                                Наши направления
+                              </h5>
+                              <ul class="rd-megamenu-list">
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="web.html"
+                                    >Web App</a
+                                  >
+                                </li>
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="android.html"
+                                    >Android App</a
+                                  >
+                                </li>
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="ios.html"
+                                    >IOS App</a
+                                  >
+                                </li>
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="ux.html"
+                                    >UX Design</a
+                                  >
+                                </li>
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="logo.html"
+                                    >Logo</a
+                                  >
+                                </li>
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="devops.html"
+                                    >Поддержка DevOps</a
+                                  >
+                                </li>
+                              </ul>
                             </div>
-                            <a id="navBtn" class="button button-primary" href="portfolio.html" target="_blank"
-                              data-caption-animate="fadeInUp">Подробнее</a>
-                          </div>
-                        </li>
-                      </ul>
+                          </li>
+                          <li class="rd-megamenu-item rd-megamenu-carousel">
+                            <div>
+                              <h4 class="rd-megamenu-title">Наши проекты</h4>
 
-                    </li>
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="contact-us.html">Связаться с нами</a>
-                    </li>
-
-                  </ul>
+                              <!-- Owl Carousel-->
+                              <div
+                                class="owl-carousel owl-navbar"
+                                data-items="1"
+                                data-xl-items="2"
+                                data-xxl-items="3"
+                                data-margin="16"
+                                data-dots="true"
+                                data-autoplay="false"
+                                data-loop="false"
+                              >
+                                <!-- Thumbnail Classic-->
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/esim.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/esim.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/esim.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">ESIM</a>
+                                    </p>
+                                  </div>
+                                </article>
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/cayman.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/cayman.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/cayman.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">CAYMAN'S HELL</a>
+                                    </p>
+                                  </div>
+                                </article>
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/maumarket.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/maumarket.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/maumarket.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">Mau-market</a>
+                                    </p>
+                                  </div>
+                                </article>
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/mycar.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/mycar.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/mycar.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">MY CAR</a>
+                                    </p>
+                                  </div>
+                                </article>
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/sploteam.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/sploteam.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/sploteam.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">SPLOTEAM</a>
+                                    </p>
+                                  </div>
+                                </article>
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/utg.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/utg.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/utg.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">UTG AVIA</a>
+                                    </p>
+                                  </div>
+                                </article>
+                              </div>
+                              <a
+                                id="navBtn"
+                                class="button button-primary"
+                                href="portfolio.html"
+                                target="_blank"
+                                data-caption-animate="fadeInUp"
+                                >Подробнее</a
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="rd-nav-item active">
+                        <a class="rd-nav-link" href="contact-us.html"
+                          >Связаться с нами</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Breadcrumbs -->
+      <section class="breadcrumbs-custom-inset">
+        <div class="breadcrumbs-custom">
+          <div class="container">
+            <h1 class="breadcrumbs-custom-title">Контакты</h1>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- Breadcrumbs -->
-    <section class="breadcrumbs-custom-inset">
-      <div class="breadcrumbs-custom">
+          <div
+            class="box-position"
+            style="background-image: url(images/bg-elements.jpg)"
+          ></div>
+        </div>
+      </section>
+      <!-- Contact information-->
+      <section class="section section-sm section-first bg-default">
         <div class="container">
-          <h1 class="breadcrumbs-custom-title">Контакты</h1>
+          <div class="row row-30 justify-content-center">
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <article class="box-contacts">
+                <div class="box-contacts-body">
+                  <div
+                    class="box-contacts-icon fl-bigmug-line-cellphone55"
+                  ></div>
+                  <div class="box-contacts-decor"></div>
+                  <p class="box-contacts-link">
+                    <a href="tel:#">+1 323-913-4688</a>
+                  </p>
+                  <p class="box-contacts-link">
+                    <a href="tel:#">+1 323-888-4554</a>
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <article class="box-contacts">
+                <div class="box-contacts-body">
+                  <div class="box-contacts-icon fl-bigmug-line-up104"></div>
+                  <div class="box-contacts-decor"></div>
+                  <p class="box-contacts-link">
+                    <a href="#"
+                      >4730 Crystal Springs Dr, Los Angeles, CA 90027</a
+                    >
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-4">
+              <article class="box-contacts">
+                <div class="box-contacts-body">
+                  <div class="box-contacts-icon fl-bigmug-line-chat55"></div>
+                  <div class="box-contacts-decor"></div>
+                  <p class="box-contacts-link">
+                    <a href="mailto:#">mail@demolimk.org</a>
+                  </p>
+                  <p class="box-contacts-link">
+                    <a href="mailto:#">info@demolimk.org</a>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <div class="box-position" style="background-image: url(images/bg-elements.jpg);"></div>
-      </div>
-    </section>
-    <!-- Contact information-->
-    <section class="section section-sm section-first bg-default">
-      <div class="container">
-        <div class="row row-30 justify-content-center">
-          <div class="col-sm-8 col-md-6 col-lg-4">
-            <article class="box-contacts">
-              <div class="box-contacts-body">
-                <div class="box-contacts-icon fl-bigmug-line-cellphone55"></div>
-                <div class="box-contacts-decor"></div>
-                <p class="box-contacts-link"><a href="tel:#">+1 323-913-4688</a></p>
-                <p class="box-contacts-link"><a href="tel:#">+1 323-888-4554</a></p>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-8 col-md-6 col-lg-4">
-            <article class="box-contacts">
-              <div class="box-contacts-body">
-                <div class="box-contacts-icon fl-bigmug-line-up104"></div>
-                <div class="box-contacts-decor"></div>
-                <p class="box-contacts-link"><a href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></p>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-8 col-md-6 col-lg-4">
-            <article class="box-contacts">
-              <div class="box-contacts-body">
-                <div class="box-contacts-icon fl-bigmug-line-chat55"></div>
-                <div class="box-contacts-decor"></div>
-                <p class="box-contacts-link"><a href="mailto:#">mail@demolimk.org</a></p>
-                <p class="box-contacts-link"><a href="mailto:#">info@demolimk.org</a></p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Form and Gmap-->
-    <section class="section section-sm section-last bg-default text-md-left">
-      <div class="container">
-        <div class="row row-50">
-          <div class="col-lg-6 section-map-small">
-            <!--Google Map-->
-            <section class="section" id="contacts">
-              <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
-              <!--Please note that YOUR_API_KEY should replaced with your key.-->
-              <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
-            </section>
-          </div>
-          <div class="col-lg-12">
-            <h4 class="text-spacing-50">Напишите нам</h4>
-            <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact"
-              method="post" action="bat/rd-mailform.php">
-              <div class="row row-14 gutters-14">
-                <div class="col-sm-6">
-                  <div class="form-wrap">
-                    <input class="form-input" id="contact-first-name" type="text" name="name"
-                      data-constraints="@Required">
-                    <label class="form-label" for="contact-first-name">Имя</label>
+      <!-- Contact Form and Gmap-->
+      <section class="section section-sm section-last bg-default text-md-left">
+        <div class="container">
+          <div class="row row-50">
+            <div class="col-lg-6 section-map-small">
+              <!--Google Map-->
+              <section class="section" id="contacts">
+                <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
+                <!--Please note that YOUR_API_KEY should replaced with your key.-->
+                <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
+              </section>
+            </div>
+            <div class="col-lg-12">
+              <h4 class="text-spacing-50">Напишите нам</h4>
+              <form
+                class="rd-form rd-mailform"
+                data-form-output="form-output-global"
+                data-form-type="contact"
+                method="post"
+                action="bat/rd-mailform.php"
+              >
+                <div class="row row-14 gutters-14">
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <input
+                        class="form-input"
+                        id="contact-first-name"
+                        type="text"
+                        name="name"
+                        data-constraints="@Required"
+                      />
+                      <label class="form-label" for="contact-first-name"
+                        >Имя</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <input
+                        class="form-input"
+                        id="contact-last-name"
+                        type="text"
+                        name="name"
+                        data-constraints="@Required"
+                      />
+                      <label class="form-label" for="contact-last-name"
+                        >Фамилия</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <input
+                        class="form-input"
+                        id="contact-email"
+                        type="email"
+                        name="email"
+                        data-constraints="@Email @Required"
+                      />
+                      <label class="form-label" for="contact-email"
+                        >E-mail</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-message"
+                        >Текст</label
+                      >
+                      <textarea
+                        class="form-input"
+                        id="contact-message"
+                        name="message"
+                        data-constraints="@Required"
+                      ></textarea>
+                    </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="form-wrap">
-                    <input class="form-input" id="contact-last-name" type="text" name="name"
-                      data-constraints="@Required">
-                    <label class="form-label" for="contact-last-name">Фамилия</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-wrap">
-                    <input class="form-input" id="contact-email" type="email" name="email"
-                      data-constraints="@Email @Required">
-                    <label class="form-label" for="contact-email">E-mail</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-wrap">
-                    <label class="form-label" for="contact-message">Текст</label>
-                    <textarea class="form-input" id="contact-message" name="message"
-                      data-constraints="@Required"></textarea>
-                  </div>
-                </div>
-              </div>
-              <button class="button button-primary button-pipaluk" type="submit">Send Message</button>
-            </form>
+                <button
+                  class="button button-primary button-pipaluk"
+                  type="submit"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Page Footer-->
-    <footer class="section section-fluid footer-classic">
-      <div class="container-fluid bg-gray-15">
-        <div class="row justify-content-center row-30">
-          <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">
-            <div class="box-footer box-footer-small">
-              <div class="footer-brand"><a href="index.html">
-                  <!-- <img src="images/logo-inverse-191x52.png" alt="" width="191" height="52" /> -->
-                  <h2>Mobile Solutions</h2>
-                </a></div>
-              <p class="text-width-medium">Наша компания занимается разработкой качественного и надежного программного
-                обеспечения для корпоративных нужд с 2011 года. Мы - известные профессионалы в области разработки
-                программного обеспечения.</p>
-              <div class="contact-classic">
-                <div class="contact-classic-item">
-                  <div class="unit unit-spacing-md align-items-center">
-                    <div class="unit-left">
-                      <h6 class="contact-classic-title">АДРЕС</h6>
-                    </div>
-                    <div class="unit-body contact-classic-link"><a href="#">4730 Crystal Springs Dr, Los Angeles, CA
-                        90027</a></div>
-                  </div>
+      <!-- Page Footer-->
+      <footer class="section section-fluid footer-classic">
+        <div class="container-fluid bg-gray-15">
+          <div class="row justify-content-center row-30">
+            <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">
+              <div class="box-footer box-footer-small">
+                <div class="footer-brand">
+                  <a href="index.html">
+                    <!-- <img src="images/logo-inverse-191x52.png" alt="" width="191" height="52" /> -->
+                    <h2>Mobile Solutions</h2>
+                    <hr
+                      width="100%"
+                      text-align="center"
+                      style="margin-right: 0"
+                    />
+                  </a>
                 </div>
-                <div class="contact-classic-item">
-                  <div class="unit unit-spacing-md align-items-center">
-                    <div class="unit-left">
-                      <h6 class="contact-classic-title">ТЕЛЕФОНЫ</h6>
-                    </div>
-                    <div class="unit-body contact-classic-link"><a href="tel:#">+1 323-913-4688</a>, <a href="tel:#"> +1
-                        323-888-4554</a>
+                <p class="text-width-medium">
+                  Наша компания занимается разработкой качественного и надежного
+                  программного обеспечения для корпоративных нужд с 2011 года.
+                  Мы - известные профессионалы в области разработки программного
+                  обеспечения.
+                </p>
+                <div class="contact-classic">
+                  <div class="contact-classic-item">
+                    <div class="unit unit-spacing-md align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">АДРЕС</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link">
+                        <a href="#"
+                          >4730 Crystal Springs Dr, Los Angeles, CA 90027</a
+                        >
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="contact-classic-item">
-                  <div class="unit unit-spacing-md align-items-center">
-                    <div class="unit-left">
-                      <h6 class="contact-classic-title">E-mails</h6>
+                  <div class="contact-classic-item">
+                    <div class="unit unit-spacing-md align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">ТЕЛЕФОНЫ</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link">
+                        <a href="tel:#">+1 323-913-4688</a>,
+                        <a href="tel:#"> +1 323-888-4554</a>
+                      </div>
                     </div>
-                    <div class="unit-body contact-classic-link"><a href="mailto:#"> info@demolink.org</a>, <a
-                        href="mailto:#"> mail@demolink.org</a>
+                  </div>
+                  <div class="contact-classic-item">
+                    <div class="unit unit-spacing-md align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">E-mails</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link">
+                        <a href="mailto:#"> info@demolink.org</a>,
+                        <a href="mailto:#"> mail@demolink.org</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+            <!-- <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
             <div class="box-footer">
               <h3 class="font-weight-normal">Вопросы? Напишите нам</h3>
               <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact"
@@ -373,35 +644,81 @@
               </form>
             </div>
           </div> -->
-          <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
-            <div class="box-footer">
-              <h3 class="font-weight-normal">Что мы предлагаем</h3>
-              <ul class="footer-list-category">
-                <li class="heading-4"><a href="web.html">Web разработка<span></span></a></li>
-                <li class="heading-4"><a href="android.html">Android разработка<span></span></a></li>
-                <li class="heading-4"><a href="ios.html">IOS разработка<span></span></a></li>
-                <li class="heading-4"><a href="ux.html">UX Разработка<span></span></a></li>
-                <li class="heading-4"><a href="logo.html">Создание Логотипа<span></span></a></li>
-                <li class="heading-4"><a href="devops.html">DevOps Поддержка<span></span></a></li>
-              </ul>
+            <div
+              class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight"
+              data-wow-delay=".2s"
+            >
+              <div class="box-footer">
+                <h3 class="font-weight-normal">Что мы предлагаем</h3>
+                <ul class="footer-list-category">
+                  <li class="heading-4">
+                    <a href="web.html">Web разработка<span></span></a>
+                  </li>
+                  <li class="heading-4">
+                    <a href="android.html">Android разработка<span></span></a>
+                  </li>
+                  <li class="heading-4">
+                    <a href="ios.html">IOS разработка<span></span></a>
+                  </li>
+                  <li class="heading-4">
+                    <a href="ux.html">UX Разработка<span></span></a>
+                  </li>
+                  <li class="heading-4">
+                    <a href="logo.html">Создание Логотипа<span></span></a>
+                  </li>
+                  <li class="heading-4">
+                    <a href="devops.html">DevOps Поддержка<span></span></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container footer-bottom-panel wow fadeInUp">
-        <!-- Rights-->
-        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>MobileSolutions</span>.
-          All
-          rights reserved. <a href="privacy-policy.html"> Privacy Policy.</a>
-        </p>
-      </div>
-    </footer>
-  </div>
-  <!-- Global Mailform Output-->
-  <div class="snackbars" id="form-output-global"></div>
-  <!-- Javascript-->
-  <script src="js/core.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+        <div class="container footer-bottom-panel wow fadeInUp">
+          <!-- Rights-->
+          <p class="rights">
+            <span>&copy;&nbsp;</span><span class="copyright-year"></span>
+            <span>MobileSolutions</span>. All rights reserved.
+            <a href="privacy-policy.html"> Privacy Policy.</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <!--Multi Lang Plagin-->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/d2s_lang.js"></script>
+    <script>
+      lang("lang", "data-lang", "body");
 
+      function setLang(setLang) {
+        $("body").data("lang-active", setLang);
+        lang("lang", "data-lang", "body");
+      }
+    </script>
+
+    <script>
+      function changeRuButton() {
+        let button_ru = document.getElementById("button-ru");
+        let button_eng = document.getElementById("button-eng");
+        button_ru.style.cssText = "background: #584cdf; color: whitesmoke; ";
+        button_eng.style.cssText =
+          "background: #efefef; color: black; #button-eng:hover {background: #584cdf; color: whitesmoke;}";
+      }
+    </script>
+    <script>
+      function changeEngButton() {
+        let button_ru = document.getElementById("button-ru");
+        let button_eng = document.getElementById("button-eng");
+        button_eng.style.cssText = "background: #584cdf; color: whitesmoke";
+        button_ru.style.cssText =
+          "background: #efefef; color: black; #button-ru:hover {background: #584cdf; color: whitesmoke;}";
+      }
+    </script>
+    <!-------------------------------- -->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

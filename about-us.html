@@ -1,495 +1,884 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
+  <head>
+    <title>About Us</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Stylesheets-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      #button-ru {
+        background: #584cdf;
+        color: whitesmoke;
+      }
+      .multiLang {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .multiLang-button {
+        position: relative;
+        border: none;
+        transition: 0.3s ease-in-out;
+      }
+      .statistic {
+        margin-bottom: 70px;
+      }
 
-<head>
-  <title>About Us</title>
-  <meta name="format-detection" content="telephone=no">
-  <meta name="viewport"
-    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <!-- Stylesheets-->
-  <link rel="stylesheet" type="text/css"
-    href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    .statistic {
-      margin-bottom: 70px;
-    }
+      .statisticTitle {
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
 
-    .statisticTitle {
-      font-weight: 600;
-      font-size: 1.5rem;
-    }
+      .statisticText {
+        text-transform: lowercase;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
 
-    .statisticText {
-      text-transform: lowercase;
-      font-size: 1.2rem;
-      font-weight: 400;
-    }
+      .navbarTitle {
+        color: #584cdf;
+        font-weight: 800;
+      }
 
-    .navbarTitle {
-      color: #584cdf;
-      font-weight: 800;
-    }
+      #navBtn {
+        font-size: 10px;
+        padding: 8px;
+      }
 
-    #navBtn {
-      font-size: 10px;
-      padding: 8px;
-    }
+      #bossImg {
+        transition: 0.5s ease-in-out;
+      }
 
-    #bossImg {
-      transition: 0.5s ease-in-out;
-    }
+      #bossImg:hover {
+        transform: scale(1.05);
+      }
 
-    #bossImg:hover {
-      transform: scale(1.05);
-    }
-
-    .breadcrumbs-custom-title {
-      animation: mainIcon 2s forwards;
-      opacity: 0;
-    }
-
-    @keyframes mainIcon {
-      from {
+      .breadcrumbs-custom-title {
+        animation: mainIcon 2s forwards;
         opacity: 0;
-        transform: translateX(-10%);
       }
 
-      to {
-        opacity: 1;
-        transform: translateX(0%);
+      @keyframes mainIcon {
+        from {
+          opacity: 0;
+          transform: translateX(-10%);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0%);
+        }
       }
-    }
 
-    .ie-panel {
-      display: none;
-      background: #212121;
-      padding: 10px 0;
-      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
-      clear: both;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
+      .ie-panel {
+        display: none;
+        background: #212121;
+        padding: 10px 0;
+        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+        clear: both;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
 
-    html.ie-10 .ie-panel,
-    html.lt-ie-10 .ie-panel {
-      display: block;
-    }
-  </style>
-</head>
+      html.ie-10 .ie-panel,
+      html.lt-ie-10 .ie-panel {
+        display: block;
+      }
+    </style>
+  </head>
 
-<body>
-  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
-        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
-        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
-  </div>
-  <div class="preloader">
-    <div class="preloader-body">
-      <div class="cssload-container"><span></span><span></span><span></span><span></span>
+  <body>
+    <div class="ie-panel">
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/"
+        ><img
+          src="images/ie8-panel/warning_bar_0000_us.jpg"
+          height="42"
+          width="820"
+          alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
+      /></a>
+    </div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <span></span><span></span><span></span><span></span>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="page">
-    <!-- Page Header-->
-    <header class="section page-header">
-      <!-- RD Navbar-->
-      <div class="rd-navbar-wrap">
-        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
-          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
-          data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
-          data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
-          data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
-          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-          <div class="rd-navbar-main-outer">
-            <div class="rd-navbar-main">
-              <!-- RD Navbar Panel-->
-              <div class="rd-navbar-panel">
-                <!-- RD Navbar Toggle-->
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand" href="index.html">
-                    <!-- <img src="images/logo-default-191x52.png" alt="" width="191" height="52" /> -->
-                    <h3 class="navbarTitle">Mobile Solutions</h3>
-                  </a></div>
-              </div>
-              <div class="rd-navbar-main-element">
-                <div class="rd-navbar-nav-wrap">
-                  <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Главная</a>
-                    </li>
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="about-us.html">О нас</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="portfolio.html">Портфолио</a>
-                      <!-- RD Navbar Dropdown-->
-                      <ul class="rd-menu rd-navbar-megamenu">
-                        <li class="rd-megamenu-item">
-                          <div>
-                            <h5 class="rd-megamenu-title"> Наши направления</h5>
-                            <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="web.html">Web
-                                  App</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
-                                  href="android.html">Android App</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="ios.html">IOS
-                                  App</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="ux.html">UX
-                                  Design</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
-                                  href="logo.html">Logo</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
-                                  href="devops.html">Поддержка DevOps</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="rd-megamenu-item rd-megamenu-carousel">
-                          <div>
-                            <h4 class="rd-megamenu-title">Наши проекты </h4>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav
+            class="rd-navbar rd-navbar-classic"
+            data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed"
+            data-md-device-layout="rd-navbar-fixed"
+            data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-fixed"
+            data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static"
+            data-xxl-layout="rd-navbar-static"
+            data-xxl-device-layout="rd-navbar-static"
+            data-lg-stick-up-offset="46px"
+            data-xl-stick-up-offset="46px"
+            data-xxl-stick-up-offset="46px"
+            data-lg-stick-up="true"
+            data-xl-stick-up="true"
+            data-xxl-stick-up="true"
+          >
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button
+                    class="rd-navbar-toggle"
+                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                  >
+                    <span></span>
+                  </button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <a class="brand" href="index.html">
+                      <!-- <img src="images/logo-default-191x52.png" alt="" width="191" height="52" /> -->
+                      <h3 class="navbarTitle">Mobile Solutions</h3>
+                    </a>
+                  </div>
+                  <div class="multiLang">
+                    <button
+                      id="button-ru"
+                      class="multiLang-button"
+                      onclick="setLang('ru');changeRuButton()"
+                    >
+                      RU
+                    </button>
+                    <button
+                      id="button-eng"
+                      class="multiLang-button"
+                      onclick="setLang('eng');changeEngButton();"
+                    >
+                      ENG
+                    </button>
+                    <hr
+                      width="150%"
+                      text-align="center"
+                      style="margin-right: 0"
+                    />
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html">Главная</a>
+                      </li>
+                      <li class="rd-nav-item active">
+                        <a class="rd-nav-link" href="about-us.html">О нас</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="portfolio.html"
+                          >Портфолио</a
+                        >
 
-                            <!-- Owl Carousel-->
-                            <div class="owl-carousel owl-navbar" data-items="1" data-xl-items="2" data-xxl-items="3"
-                              data-margin="16" data-dots="true" data-autoplay="false" data-loop="false">
-                              <!-- Thumbnail Classic-->
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/esim.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/esim.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/esim.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">ESIM</a></p>
-                                </div>
-                              </article>
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/cayman.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/cayman.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/cayman.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">CAYMAN'S HELL</a></p>
-                                </div>
-                              </article>
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/maumarket.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/maumarket.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/maumarket.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">Mau-market</a></p>
-                                </div>
-                              </article>
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/mycar.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/mycar.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/mycar.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">MY CAR</a></p>
-                                </div>
-                              </article>
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/sploteam.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/sploteam.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/sploteam.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">SPLOTEAM</a></p>
-                                </div>
-                              </article>
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/portfolio/utg.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/portfolio/utg.jpg" data-lightgallery="item"><img
-                                      src="images/portfolio/utg.jpg" alt="" /></a>
-                                  <p class="thumbnail-mary-title"><a href="#">UTG AVIA</a></p>
-                                </div>
-                              </article>
+                        <!-- RD Navbar Dropdown-->
+                        <ul class="rd-menu rd-navbar-megamenu">
+                          <li class="rd-megamenu-item">
+                            <div>
+                              <h5 class="rd-megamenu-title">
+                                Наши направления
+                              </h5>
+                              <ul class="rd-megamenu-list">
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="web.html"
+                                    >Web App</a
+                                  >
+                                </li>
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="android.html"
+                                    >Android App</a
+                                  >
+                                </li>
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="ios.html"
+                                    >IOS App</a
+                                  >
+                                </li>
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="ux.html"
+                                    >UX Design</a
+                                  >
+                                </li>
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="logo.html"
+                                    >Logo</a
+                                  >
+                                </li>
+                                <li class="rd-megamenu-list-item">
+                                  <a
+                                    class="rd-megamenu-list-link"
+                                    href="devops.html"
+                                    >Поддержка DevOps</a
+                                  >
+                                </li>
+                              </ul>
                             </div>
-                            <a id="navBtn" class="button button-primary" href="portfolio.html" target="_blank"
-                              data-caption-animate="fadeInUp">Подробнее</a>
-                          </div>
-                        </li>
-                      </ul>
+                          </li>
+                          <li class="rd-megamenu-item rd-megamenu-carousel">
+                            <div>
+                              <h4 class="rd-megamenu-title">Наши проекты</h4>
 
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Связаться с нами</a>
-                    </li>
-
-                  </ul>
+                              <!-- Owl Carousel-->
+                              <div
+                                class="owl-carousel owl-navbar"
+                                data-items="1"
+                                data-xl-items="2"
+                                data-xxl-items="3"
+                                data-margin="16"
+                                data-dots="true"
+                                data-autoplay="false"
+                                data-loop="false"
+                              >
+                                <!-- Thumbnail Classic-->
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/esim.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/esim.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/esim.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">ESIM</a>
+                                    </p>
+                                  </div>
+                                </article>
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/cayman.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/cayman.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/cayman.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">CAYMAN'S HELL</a>
+                                    </p>
+                                  </div>
+                                </article>
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/maumarket.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/maumarket.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/maumarket.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">Mau-market</a>
+                                    </p>
+                                  </div>
+                                </article>
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/mycar.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/mycar.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/mycar.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">MY CAR</a>
+                                    </p>
+                                  </div>
+                                </article>
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/sploteam.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/sploteam.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/sploteam.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">SPLOTEAM</a>
+                                    </p>
+                                  </div>
+                                </article>
+                                <article
+                                  class="thumbnail thumbnail-mary thumbnail-xxs"
+                                >
+                                  <div class="thumbnail-mary-figure">
+                                    <img
+                                      src="images/portfolio/utg.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="thumbnail-mary-caption">
+                                    <a
+                                      class="icon fl-bigmug-line-zoom60"
+                                      href="images/portfolio/utg.jpg"
+                                      data-lightgallery="item"
+                                      ><img
+                                        src="images/portfolio/utg.jpg"
+                                        alt=""
+                                    /></a>
+                                    <p class="thumbnail-mary-title">
+                                      <a href="#">UTG AVIA</a>
+                                    </p>
+                                  </div>
+                                </article>
+                              </div>
+                              <a
+                                id="navBtn"
+                                class="button button-primary"
+                                href="portfolio.html"
+                                target="_blank"
+                                data-caption-animate="fadeInUp"
+                                >Подробнее</a
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="contact-us.html"
+                          >Связаться с нами</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- Breadcrumbs -->
-    <section class="breadcrumbs-custom-inset">
-      <div class="breadcrumbs-custom">
-        <div class="container">
-          <h1 class="breadcrumbs-custom-title">О нас</h1>
+          </nav>
         </div>
-        <div class="box-position" style="background-image: url(images/bg-elements.jpg);"></div>
-      </div>
-    </section>
-    <!-- Why choose us-->
-    <section class="section section-sm section-first bg-default text-md-left">
-      <div class="container">
-        <div class="row row-50 justify-content-center align-items-xl-center">
-          <div class="col-md-10 col-lg-5 col-xl-6"><img src="images/about-1-519x564.jpg" alt="" width="519"
-              height="564" />
-          </div>
-          <div class="col-md-10 col-lg-7 col-xl-6">
-            <h2 class="text-spacing-25 font-weight-normal title-opacity-9">Почему нас выбирают</h2>
-            <!-- Bootstrap tabs-->
-            <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-4">
-              <!-- Nav tabs-->
-              <ul class="nav nav-tabs">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-4-1"
-                    data-toggle="tab">Опыт</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-4-2"
-                    data-toggle="tab">Навык</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-4-3" data-toggle="tab">Цель</a>
-                </li>
-              </ul>
-              <!-- Tab panes-->
-              <div class="tab-content">
-                <div class="tab-pane fade show active" id="tabs-4-1">
-                  <p>Профессиональная команда Mobile Solutions объединяет высококвалифицированных разработчиков
-                    программных продуктов: архитекторов, аналитиков, программистов, тестировщиков, системных инженеров и
-                    менеджеров. Все наши специалисты имеют многолетний опыт реализации и запуска крупных международных и
-                    российских проектов. </p>
-                  <div class="text-center text-sm-left offset-top-30">
-                    <ul class="row-16 list-0 list-custom list-marked list-marked-sm list-marked-secondary">
-                      <li>WEB Apps</li>
-                      <li>iOS Apps</li>
-                      <li>UX and Design</li>
-                      <li>Android Apps</li>
-                      <li>DevOps</li>
-                      <li>Logo</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="tabs-4-2">
-                  <p>Команде Mobile Solutions по силам разработать и запустить высоконагруженное отказоустойчивое
-                    программное обеспечение любой сложности на платформах с широким функционалом и возможностью
-                    интеграции с другими системами. Мы знаем, как совместить новые решения с действующими
-                    бизнес-процессами, сделав их доступными и удобными для сотрудников и клиентов. Быстро подключаемся к
-                    реализации поставленных задач на любом этапе.</p>
-                  <div class="text-center text-sm-left offset-top-30">
-                    <ul class="row-16 list-0 list-custom list-marked list-marked-sm list-marked-secondary">
-                      <li>WEB Apps</li>
-                      <li>iOS Apps</li>
-                      <li>UX and Design</li>
-                      <li>Android Apps</li>
-                      <li>DevOps</li>
-                      <li>Logo</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="tabs-4-3">
-                  <p>Создадим надежные и функциональные web-приложения, приложения на базе Android, IOS и MacOS.
-                    Занимаемся UX разработкой, разработкой логотипов, осуществляем DevOps поддержку. Гарантируем высокое
-                    качество, производительность, уникальность, клиентский сервис. Нашу работу отличает открытость,
-                    честность, креативный подход, четкий баланс скорости и качества разработки. </p>
-                  <div class="text-center text-sm-left offset-top-30">
-                    <ul class="row-16 list-0 list-custom list-marked list-marked-sm list-marked-secondary">
-                      <li>WEB Apps</li>
-                      <li>iOS Apps</li>
-                      <li>UX and Design</li>
-                      <li>Android Apps</li>
-                      <li>DevOps</li>
-                      <li>Logo</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Latest Projects-->
-    <section class="section section-sm section-fluid bg-default">
-      <div class="container-fluid">
-        <h2>Наша команда</h2>
-        <!-- Team #3-->
-        <section class="section section-sm bg-default">
+      </header>
+      <!-- Breadcrumbs -->
+      <section class="breadcrumbs-custom-inset">
+        <div class="breadcrumbs-custom">
           <div class="container">
-            <div class="row row-sm row-30">
-              <div class="col-md-6 col-lg-5 col-xl-6">
-                <!-- Team Creative-->
-                <article class="team-creative"><a class="team-creative-figure" href="#"><img
-                      src="images/team-5-370x366.jpg" alt="" width="370" height="366" id="bossImg" /></a>
-                  <div class="team-creative-caption">
-                    <h5 class="team-creative-name"><a href="#">Ryan Wilson</a></h5>
-                    <p class="team-creative-status">Director of Production</p>
-                    <div class="team-creative-decor-bottom"></div>
-                    <div class="team-creative-decor-left"></div>
+            <h1 class="breadcrumbs-custom-title">О нас</h1>
+          </div>
+          <div
+            class="box-position"
+            style="background-image: url(images/bg-elements.jpg)"
+          ></div>
+        </div>
+      </section>
+      <!-- Why choose us-->
+      <section class="section section-sm section-first bg-default text-md-left">
+        <div class="container">
+          <div class="row row-50 justify-content-center align-items-xl-center">
+            <div class="col-md-10 col-lg-5 col-xl-6">
+              <img
+                src="images/about-1-519x564.jpg"
+                alt=""
+                width="519"
+                height="564"
+              />
+            </div>
+            <div class="col-md-10 col-lg-7 col-xl-6">
+              <h2 class="text-spacing-25 font-weight-normal title-opacity-9">
+                Почему нас выбирают
+              </h2>
+              <!-- Bootstrap tabs-->
+              <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-4">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link active"
+                      href="#tabs-4-1"
+                      data-toggle="tab"
+                      >Опыт</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#tabs-4-2" data-toggle="tab"
+                      >Навык</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#tabs-4-3" data-toggle="tab"
+                      >Цель</a
+                    >
+                  </li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-4-1">
+                    <p>
+                      Профессиональная команда Mobile Solutions объединяет
+                      высококвалифицированных разработчиков программных
+                      продуктов: архитекторов, аналитиков, программистов,
+                      тестировщиков, системных инженеров и менеджеров. Все наши
+                      специалисты имеют многолетний опыт реализации и запуска
+                      крупных международных и российских проектов.
+                    </p>
+                    <div class="text-center text-sm-left offset-top-30">
+                      <ul
+                        class="
+                          row-16
+                          list-0
+                          list-custom
+                          list-marked
+                          list-marked-sm
+                          list-marked-secondary
+                        "
+                      >
+                        <li>WEB Apps</li>
+                        <li>iOS Apps</li>
+                        <li>UX and Design</li>
+                        <li>Android Apps</li>
+                        <li>DevOps</li>
+                        <li>Logo</li>
+                      </ul>
+                    </div>
                   </div>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-5 col-xl-6">
-                <!-- Team Creative-->
-                <article class="team-creative"><a class="team-creative-figure" href="#"><img
-                      src="images/team-6-370x366.jpg" alt="" width="370" height="366" id="bossImg" /></a>
-                  <div class="team-creative-caption">
-                    <h5 class="team-creative-name"><a href="#">Mary Lee</a></h5>
-                    <p class="team-creative-status">Software Developer</p>
-                    <div class="team-creative-decor-bottom"></div>
-                    <div class="team-creative-decor-left"></div>
+                  <div class="tab-pane fade" id="tabs-4-2">
+                    <p>
+                      Команде Mobile Solutions по силам разработать и запустить
+                      высоконагруженное отказоустойчивое программное обеспечение
+                      любой сложности на платформах с широким функционалом и
+                      возможностью интеграции с другими системами. Мы знаем, как
+                      совместить новые решения с действующими бизнес-процессами,
+                      сделав их доступными и удобными для сотрудников и
+                      клиентов. Быстро подключаемся к реализации поставленных
+                      задач на любом этапе.
+                    </p>
+                    <div class="text-center text-sm-left offset-top-30">
+                      <ul
+                        class="
+                          row-16
+                          list-0
+                          list-custom
+                          list-marked
+                          list-marked-sm
+                          list-marked-secondary
+                        "
+                      >
+                        <li>WEB Apps</li>
+                        <li>iOS Apps</li>
+                        <li>UX and Design</li>
+                        <li>Android Apps</li>
+                        <li>DevOps</li>
+                        <li>Logo</li>
+                      </ul>
+                    </div>
                   </div>
-                </article>
+                  <div class="tab-pane fade" id="tabs-4-3">
+                    <p>
+                      Создадим надежные и функциональные web-приложения,
+                      приложения на базе Android, IOS и MacOS. Занимаемся UX
+                      разработкой, разработкой логотипов, осуществляем DevOps
+                      поддержку. Гарантируем высокое качество,
+                      производительность, уникальность, клиентский сервис. Нашу
+                      работу отличает открытость, честность, креативный подход,
+                      четкий баланс скорости и качества разработки.
+                    </p>
+                    <div class="text-center text-sm-left offset-top-30">
+                      <ul
+                        class="
+                          row-16
+                          list-0
+                          list-custom
+                          list-marked
+                          list-marked-sm
+                          list-marked-secondary
+                        "
+                      >
+                        <li>WEB Apps</li>
+                        <li>iOS Apps</li>
+                        <li>UX and Design</li>
+                        <li>Android Apps</li>
+                        <li>DevOps</li>
+                        <li>Logo</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <!-- Counter Classic-->
-    <section class="section section-fluid bg-default statistic">
-      <div class="container-fluid">
-        <div class="parallax-container" data-parallax-img="images/bg-counter-2.jpg">
-          <div class="parallax-content section-xl">
+      <!-- Latest Projects-->
+      <section class="section section-sm section-fluid bg-default">
+        <div class="container-fluid">
+          <h2>Наша команда</h2>
+          <!-- Team #3-->
+          <section class="section section-sm bg-default">
             <div class="container">
-              <div class="row row-50 justify-content-center border-classic">
-                <div class="col-sm-6 col-md-5 col-lg-3">
-                  <div class="counter-classic">
-                    <div class="counter-classic-number">
-                      <p class="statisticText">более</p> <span class="counter">20</span>
+              <div class="row row-sm row-30">
+                <div class="col-md-6 col-lg-5 col-xl-6">
+                  <!-- Team Creative-->
+                  <article class="team-creative">
+                    <a class="team-creative-figure" href="#"
+                      ><img
+                        src="images/team-5-370x366.jpg"
+                        alt=""
+                        width="370"
+                        height="366"
+                        id="bossImg"
+                    /></a>
+                    <div class="team-creative-caption">
+                      <h5 class="team-creative-name">
+                        <a href="#">Ryan Wilson</a>
+                      </h5>
+                      <p class="team-creative-status">Director of Production</p>
+                      <div class="team-creative-decor-bottom"></div>
+                      <div class="team-creative-decor-left"></div>
                     </div>
-                    <h4 class="counter-classic-title statisticTitle">разработчиков</h4>
-                  </div>
+                  </article>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-3">
-                  <div class="counter-classic">
-                    <div class="counter-classic-number">
-                      <p class="statisticText">более</p><span class="counter">30</span>
+                <div class="col-md-6 col-lg-5 col-xl-6">
+                  <!-- Team Creative-->
+                  <article class="team-creative">
+                    <a class="team-creative-figure" href="#"
+                      ><img
+                        src="images/team-6-370x366.jpg"
+                        alt=""
+                        width="370"
+                        height="366"
+                        id="bossImg"
+                    /></a>
+                    <div class="team-creative-caption">
+                      <h5 class="team-creative-name">
+                        <a href="#">Mary Lee</a>
+                      </h5>
+                      <p class="team-creative-status">Software Developer</p>
+                      <div class="team-creative-decor-bottom"></div>
+                      <div class="team-creative-decor-left"></div>
                     </div>
-                    <h4 class="counter-classic-title statisticTitle">проектов</h4>
-                  </div>
+                  </article>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-3">
-                  <div class="counter-classic">
-                    <div class="counter-classic-number">
-                      <p class="statisticText">более</p><span class="counter">10</span><span class="symbol"></span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Counter Classic-->
+      <section class="section section-fluid bg-default statistic">
+        <div class="container-fluid">
+          <div
+            class="parallax-container"
+            data-parallax-img="images/bg-counter-2.jpg"
+          >
+            <div class="parallax-content section-xl">
+              <div class="container">
+                <div class="row row-50 justify-content-center border-classic">
+                  <div class="col-sm-6 col-md-5 col-lg-3">
+                    <div class="counter-classic">
+                      <div class="counter-classic-number">
+                        <p class="statisticText">более</p>
+                        <span class="counter">20</span>
+                      </div>
+                      <h4 class="counter-classic-title statisticTitle">
+                        разработчиков
+                      </h4>
                     </div>
-                    <h4 class="counter-classic-title statisticTitle">лет опыта</h4>
+                  </div>
+                  <div class="col-sm-6 col-md-5 col-lg-3">
+                    <div class="counter-classic">
+                      <div class="counter-classic-number">
+                        <p class="statisticText">более</p>
+                        <span class="counter">30</span>
+                      </div>
+                      <h4 class="counter-classic-title statisticTitle">
+                        проектов
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-5 col-lg-3">
+                    <div class="counter-classic">
+                      <div class="counter-classic-number">
+                        <p class="statisticText">более</p>
+                        <span class="counter">10</span
+                        ><span class="symbol"></span>
+                      </div>
+                      <h4 class="counter-classic-title statisticTitle">
+                        лет опыта
+                      </h4>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Page Footer-->
-    <footer class="section section-fluid footer-classic">
-      <div class="container-fluid bg-gray-15">
-        <div class="row justify-content-center row-30">
-          <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">
-            <div class="box-footer box-footer-small">
-              <div class="footer-brand"><a href="index.html">
-                  <!-- <img src="images/logo-inverse-191x52.png" alt="" width="191" height="52" /> -->
-                  <h2>Mobile Solutions</h2>
-                </a></div>
-              <p class="text-width-medium">Наша компания специализируется на создании функционального, удобного и
-                надежного программного обеспечения для бизнеса любого уровня в любой сфере. В составе команды Mobile
-                Solutions находятся только высококвалифицированные специалисты с опытом реализации крупных международных
-                проектов.</p>
-              <div class="contact-classic">
-                <div class="contact-classic-item">
-                  <div class="unit unit-spacing-md align-items-center">
-                    <div class="unit-left">
-                      <h6 class="contact-classic-title">АДРЕС</h6>
-                    </div>
-                    <div class="unit-body contact-classic-link"><a href="#">4730 Crystal Springs Dr, Los Angeles, CA
-                        90027</a></div>
-                  </div>
+      <!-- Page Footer-->
+      <footer class="section section-fluid footer-classic">
+        <div class="container-fluid bg-gray-15">
+          <div class="row justify-content-center row-30">
+            <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">
+              <div class="box-footer box-footer-small">
+                <div class="footer-brand">
+                  <a href="index.html">
+                    <!-- <img src="images/logo-inverse-191x52.png" alt="" width="191" height="52" /> -->
+                    <h2>Mobile Solutions</h2>
+                    <hr
+                      width="100%"
+                      text-align="center"
+                      style="margin-right: 0"
+                    />
+                  </a>
                 </div>
-                <div class="contact-classic-item">
-                  <div class="unit unit-spacing-md align-items-center">
-                    <div class="unit-left">
-                      <h6 class="contact-classic-title">ТЕЛЕФОНЫ</h6>
-                    </div>
-                    <div class="unit-body contact-classic-link"><a href="tel:#">+1 323-913-4688</a>, <a href="tel:#"> +1
-                        323-888-4554</a>
+                <p class="text-width-medium">
+                  Наша компания специализируется на создании функционального,
+                  удобного и надежного программного обеспечения для бизнеса
+                  любого уровня в любой сфере. В составе команды Mobile
+                  Solutions находятся только высококвалифицированные специалисты
+                  с опытом реализации крупных международных проектов.
+                </p>
+                <div class="contact-classic">
+                  <div class="contact-classic-item">
+                    <div class="unit unit-spacing-md align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">АДРЕС</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link">
+                        <a href="#"
+                          >4730 Crystal Springs Dr, Los Angeles, CA 90027</a
+                        >
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="contact-classic-item">
-                  <div class="unit unit-spacing-md align-items-center">
-                    <div class="unit-left">
-                      <h6 class="contact-classic-title">E-mails</h6>
+                  <div class="contact-classic-item">
+                    <div class="unit unit-spacing-md align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">ТЕЛЕФОНЫ</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link">
+                        <a href="tel:#">+1 323-913-4688</a>,
+                        <a href="tel:#"> +1 323-888-4554</a>
+                      </div>
                     </div>
-                    <div class="unit-body contact-classic-link"><a href="mailto:#"> info@demolink.org</a>, <a
-                        href="mailto:#"> mail@demolink.org</a>
+                  </div>
+                  <div class="contact-classic-item">
+                    <div class="unit unit-spacing-md align-items-center">
+                      <div class="unit-left">
+                        <h6 class="contact-classic-title">E-mails</h6>
+                      </div>
+                      <div class="unit-body contact-classic-link">
+                        <a href="mailto:#"> info@demolink.org</a>,
+                        <a href="mailto:#"> mail@demolink.org</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
-            <div class="box-footer">
-              <h3 class="font-weight-normal">Вопросы? Напишите нам</h3>
-              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact"
-                method="post" action="bat/rd-mailform.php">
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-name-6" type="text" name="name" data-constraints="@Required" />
-                  <label class="form-label" for="contact-name-6">Имя</label>
-                </div>
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-email-6" type="email" name="email"
-                    data-constraints="@Email @Required" />
-                  <label class="form-label" for="contact-email-6">E-mail</label>
-                </div>
-                <div class="form-wrap">
-                  <label class="form-label" for="contact-message-6">Сообщение</label>
-                  <textarea class="form-input" id="contact-message-6" name="message"
-                    data-constraints="@Required"></textarea>
-                </div>
-                <button class="button button-block button-primary" type="submit">Отправить Сообщение</button>
-              </form>
+            <div
+              class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight"
+              data-wow-delay=".1s"
+            >
+              <div class="box-footer">
+                <h3 class="font-weight-normal">Вопросы? Напишите нам</h3>
+                <form
+                  class="rd-form rd-mailform"
+                  data-form-output="form-output-global"
+                  data-form-type="contact"
+                  method="post"
+                  action="bat/rd-mailform.php"
+                >
+                  <div class="form-wrap">
+                    <input
+                      class="form-input"
+                      id="contact-name-6"
+                      type="text"
+                      name="name"
+                      data-constraints="@Required"
+                    />
+                    <label class="form-label" for="contact-name-6">Имя</label>
+                  </div>
+                  <div class="form-wrap">
+                    <input
+                      class="form-input"
+                      id="contact-email-6"
+                      type="email"
+                      name="email"
+                      data-constraints="@Email @Required"
+                    />
+                    <label class="form-label" for="contact-email-6"
+                      >E-mail</label
+                    >
+                  </div>
+                  <div class="form-wrap">
+                    <label class="form-label" for="contact-message-6"
+                      >Сообщение</label
+                    >
+                    <textarea
+                      class="form-input"
+                      id="contact-message-6"
+                      name="message"
+                      data-constraints="@Required"
+                    ></textarea>
+                  </div>
+                  <button
+                    class="button button-block button-primary"
+                    type="submit"
+                  >
+                    Отправить Сообщение
+                  </button>
+                </form>
+              </div>
             </div>
-          </div>
-          <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
-            <div class="box-footer">
-              <h3 class="font-weight-normal">Что мы предлагаем</h3>
-              <ul class="footer-list-category">
-                <li class="heading-4"><a href="web.html">Web разработка<span></span></a></li>
-                <li class="heading-4"><a href="android.html">Android разработка<span></span></a></li>
-                <li class="heading-4"><a href="ios.html">IOS разработка<span></span></a></li>
-                <li class="heading-4"><a href="ux.html">UX Разработка<span></span></a></li>
-                <li class="heading-4"><a href="logo.html">Создание Логотипа<span></span></a></li>
-                <li class="heading-4"><a href="devops.html">DevOps Поддержка<span></span></a></li>
-              </ul>
+            <div
+              class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight"
+              data-wow-delay=".2s"
+            >
+              <div class="box-footer">
+                <h3 class="font-weight-normal">Что мы предлагаем</h3>
+                <ul class="footer-list-category">
+                  <li class="heading-4">
+                    <a href="web.html">Web разработка<span></span></a>
+                  </li>
+                  <li class="heading-4">
+                    <a href="android.html">Android разработка<span></span></a>
+                  </li>
+                  <li class="heading-4">
+                    <a href="ios.html">IOS разработка<span></span></a>
+                  </li>
+                  <li class="heading-4">
+                    <a href="ux.html">UX Разработка<span></span></a>
+                  </li>
+                  <li class="heading-4">
+                    <a href="logo.html">Создание Логотипа<span></span></a>
+                  </li>
+                  <li class="heading-4">
+                    <a href="devops.html">DevOps Поддержка<span></span></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container footer-bottom-panel wow fadeInUp">
-        <!-- Rights-->
-        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>MobileSolutions</span>.
-          All
-          rights reserved. <a href="privacy-policy.html"> Privacy Policy.</a>
-        </p>
-      </div>
-    </footer>
-  </div>
-  <!-- Global Mailform Output-->
-  <div class="snackbars" id="form-output-global"></div>
-  <!-- Javascript-->
-  <script src="js/core.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+        <div class="container footer-bottom-panel wow fadeInUp">
+          <!-- Rights-->
+          <p class="rights">
+            <span>&copy;&nbsp;</span><span class="copyright-year"></span>
+            <span>MobileSolutions</span>. All rights reserved.
+            <a href="privacy-policy.html"> Privacy Policy.</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <!--Multi Lang Plagin-->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/d2s_lang.js"></script>
+    <script>
+      lang("lang", "data-lang", "body");
 
+      function setLang(setLang) {
+        $("body").data("lang-active", setLang);
+        lang("lang", "data-lang", "body");
+      }
+    </script>
+
+    <script>
+      function changeRuButton() {
+        let button_ru = document.getElementById("button-ru");
+        let button_eng = document.getElementById("button-eng");
+        button_ru.style.cssText = "background: #584cdf; color: whitesmoke; ";
+        button_eng.style.cssText =
+          "background: #efefef; color: black; #button-eng:hover {background: #584cdf; color: whitesmoke;}";
+      }
+    </script>
+    <script>
+      function changeEngButton() {
+        let button_ru = document.getElementById("button-ru");
+        let button_eng = document.getElementById("button-eng");
+        button_eng.style.cssText = "background: #584cdf; color: whitesmoke";
+        button_ru.style.cssText =
+          "background: #efefef; color: black; #button-ru:hover {background: #584cdf; color: whitesmoke;}";
+      }
+    </script>
+    <!-------------------------------- -->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

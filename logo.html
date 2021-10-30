@@ -19,6 +19,20 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
+   #button-ru {
+        background: #584cdf;
+        color: whitesmoke;
+      }
+      .multiLang {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .multiLang-button {
+        position: relative;
+        border: none;
+        transition: 0.3s ease-in-out;
+      }
     .navbarTitle {
       color: #584cdf;
       font-weight: 800;
@@ -108,134 +122,304 @@
     <header class="section page-header">
       <!-- RD Navbar-->
       <div class="rd-navbar-wrap">
-        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
-          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
-          data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
-          data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
-          data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
-          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+        <nav
+          class="rd-navbar rd-navbar-classic"
+          data-layout="rd-navbar-fixed"
+          data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed"
+          data-md-device-layout="rd-navbar-fixed"
+          data-lg-layout="rd-navbar-static"
+          data-lg-device-layout="rd-navbar-fixed"
+          data-xl-layout="rd-navbar-static"
+          data-xl-device-layout="rd-navbar-static"
+          data-xxl-layout="rd-navbar-static"
+          data-xxl-device-layout="rd-navbar-static"
+          data-lg-stick-up-offset="46px"
+          data-xl-stick-up-offset="46px"
+          data-xxl-stick-up-offset="46px"
+          data-lg-stick-up="true"
+          data-xl-stick-up="true"
+          data-xxl-stick-up="true"
+        >
           <div class="rd-navbar-main-outer">
             <div class="rd-navbar-main">
               <!-- RD Navbar Panel-->
               <div class="rd-navbar-panel">
                 <!-- RD Navbar Toggle-->
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <button
+                  class="rd-navbar-toggle"
+                  data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                >
+                  <span></span>
+                </button>
                 <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand" href="index.html">
+                <div class="rd-navbar-brand">
+                  <a class="brand" href="index.html">
                     <!-- <img src="images/logo-default-191x52.png" alt="" width="191" height="52" /> -->
                     <h3 class="navbarTitle">Mobile Solutions</h3>
-                  </a></div>
+                  </a>
+                </div>
+                <div class="multiLang">
+                  <button
+                    id="button-ru"
+                    class="multiLang-button"
+                    onclick="setLang('ru');changeRuButton()"
+                  >
+                    RU
+                  </button>
+                  <button
+                    id="button-eng"
+                    class="multiLang-button"
+                    onclick="setLang('eng');changeEngButton();"
+                  >
+                    ENG
+                  </button>
+                  <hr
+                    width="150%"
+                    text-align="center"
+                    style="margin-right: 0"
+                  />
+                </div>
               </div>
               <div class="rd-navbar-main-element">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Главная</a>
+                    <li class="rd-nav-item">
+                      <a class="rd-nav-link" href="index.html">Главная</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">О нас</a>
+                    <li class="rd-nav-item">
+                      <a class="rd-nav-link" href="about-us.html">О нас</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="portfolio.html">Портфолио</a>
+                    <li class="rd-nav-item">
+                      <a class="rd-nav-link" href="portfolio.html"
+                        >Портфолио</a
+                      >
+
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-megamenu">
                         <li class="rd-megamenu-item">
                           <div>
-                            <h5 class="rd-megamenu-title"> Наши направления</h5>
+                            <h5 class="rd-megamenu-title">
+                              Наши направления
+                            </h5>
                             <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="web.html">Web
-                                  App</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
-                                  href="android.html">Android App</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="ios.html">IOS
-                                  App</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="ux.html">UX
-                                  Design</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
-                                  href="logo.html">Logo</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
-                                  href="devops.html">Поддержка DevOps</a></li>
+                              <li class="rd-megamenu-list-item">
+                                <a
+                                  class="rd-megamenu-list-link"
+                                  href="web.html"
+                                  >Web App</a
+                                >
+                              </li>
+                              <li class="rd-megamenu-list-item">
+                                <a
+                                  class="rd-megamenu-list-link"
+                                  href="android.html"
+                                  >Android App</a
+                                >
+                              </li>
+                              <li class="rd-megamenu-list-item">
+                                <a
+                                  class="rd-megamenu-list-link"
+                                  href="ios.html"
+                                  >IOS App</a
+                                >
+                              </li>
+                              <li class="rd-megamenu-list-item">
+                                <a
+                                  class="rd-megamenu-list-link"
+                                  href="ux.html"
+                                  >UX Design</a
+                                >
+                              </li>
+                              <li class="rd-megamenu-list-item">
+                                <a
+                                  class="rd-megamenu-list-link"
+                                  href="logo.html"
+                                  >Logo</a
+                                >
+                              </li>
+                              <li class="rd-megamenu-list-item">
+                                <a
+                                  class="rd-megamenu-list-link"
+                                  href="devops.html"
+                                  >Поддержка DevOps</a
+                                >
+                              </li>
                             </ul>
                           </div>
                         </li>
                         <li class="rd-megamenu-item rd-megamenu-carousel">
                           <div>
-                            <h5 class="rd-megamenu-title">Наши проекты</h5>
+                            <h4 class="rd-megamenu-title">Наши проекты</h4>
+
                             <!-- Owl Carousel-->
-                            <div class="owl-carousel owl-navbar" data-items="1" data-xl-items="2" data-xxl-items="3"
-                              data-margin="16" data-dots="true" data-autoplay="false" data-loop="false">
+                            <div
+                              class="owl-carousel owl-navbar"
+                              data-items="1"
+                              data-xl-items="2"
+                              data-xxl-items="3"
+                              data-margin="16"
+                              data-dots="true"
+                              data-autoplay="false"
+                              data-loop="false"
+                            >
                               <!-- Thumbnail Classic-->
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/navbar-1-272x288.jpg" alt=""
-                                    width="272" height="288" />
+                              <article
+                                class="thumbnail thumbnail-mary thumbnail-xxs"
+                              >
+                                <div class="thumbnail-mary-figure">
+                                  <img
+                                    src="images/portfolio/esim.jpg"
+                                    alt=""
+                                  />
                                 </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/grid-gallery-1-1200x800-original.jpg" data-lightgallery="item"><img
-                                      src="images/navbar-1-272x288.jpg" alt="" width="272" height="288" /></a>
-                                  <h6 class="thumbnail-mary-title"><a href="#">Project #1</a></h6>
+                                <div class="thumbnail-mary-caption">
+                                  <a
+                                    class="icon fl-bigmug-line-zoom60"
+                                    href="images/portfolio/esim.jpg"
+                                    data-lightgallery="item"
+                                    ><img
+                                      src="images/portfolio/esim.jpg"
+                                      alt=""
+                                  /></a>
+                                  <p class="thumbnail-mary-title">
+                                    <a href="#">ESIM</a>
+                                  </p>
                                 </div>
                               </article>
-                              <!-- Thumbnail Classic-->
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/navbar-2-272x288.jpg" alt=""
-                                    width="272" height="288" />
+                              <article
+                                class="thumbnail thumbnail-mary thumbnail-xxs"
+                              >
+                                <div class="thumbnail-mary-figure">
+                                  <img
+                                    src="images/portfolio/cayman.jpg"
+                                    alt=""
+                                  />
                                 </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/grid-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img
-                                      src="images/navbar-2-272x288.jpg" alt="" width="272" height="288" /></a>
-                                  <h6 class="thumbnail-mary-title"><a href="#">Project #2</a></h6>
-                                </div>
-                              </article>
-                              <!-- Thumbnail Classic-->
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/navbar-3-272x288.jpg" alt=""
-                                    width="272" height="288" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/grid-gallery-4-1200x800-original.jpg" data-lightgallery="item"><img
-                                      src="images/navbar-3-272x288.jpg" alt="" width="272" height="288" /></a>
-                                  <h6 class="thumbnail-mary-title"><a href="#">Project #3</a></h6>
-                                </div>
-                              </article>
-                              <!-- Thumbnail Classic-->
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/navbar-4-272x288.jpg" alt=""
-                                    width="272" height="288" />
-                                </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/grid-gallery-3-1200x800-original.jpg" data-lightgallery="item"><img
-                                      src="images/navbar-4-272x288.jpg" alt="" width="272" height="288" /></a>
-                                  <h6 class="thumbnail-mary-title"><a href="#">Project #4</a></h6>
+                                <div class="thumbnail-mary-caption">
+                                  <a
+                                    class="icon fl-bigmug-line-zoom60"
+                                    href="images/portfolio/cayman.jpg"
+                                    data-lightgallery="item"
+                                    ><img
+                                      src="images/portfolio/cayman.jpg"
+                                      alt=""
+                                  /></a>
+                                  <p class="thumbnail-mary-title">
+                                    <a href="#">CAYMAN'S HELL</a>
+                                  </p>
                                 </div>
                               </article>
-                              <!-- Thumbnail Classic-->
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/navbar-5-272x288.jpg" alt=""
-                                    width="272" height="288" />
+                              <article
+                                class="thumbnail thumbnail-mary thumbnail-xxs"
+                              >
+                                <div class="thumbnail-mary-figure">
+                                  <img
+                                    src="images/portfolio/maumarket.jpg"
+                                    alt=""
+                                  />
                                 </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/grid-gallery-5-1200x800-original.jpg" data-lightgallery="item"><img
-                                      src="images/navbar-5-272x288.jpg" alt="" width="272" height="288" /></a>
-                                  <h6 class="thumbnail-mary-title"><a href="#">Project #5</a></h6>
+                                <div class="thumbnail-mary-caption">
+                                  <a
+                                    class="icon fl-bigmug-line-zoom60"
+                                    href="images/portfolio/maumarket.jpg"
+                                    data-lightgallery="item"
+                                    ><img
+                                      src="images/portfolio/maumarket.jpg"
+                                      alt=""
+                                  /></a>
+                                  <p class="thumbnail-mary-title">
+                                    <a href="#">Mau-market</a>
+                                  </p>
                                 </div>
                               </article>
-                              <!-- Thumbnail Classic-->
-                              <article class="thumbnail thumbnail-mary thumbnail-xxs">
-                                <div class="thumbnail-mary-figure"><img src="images/navbar-6-272x288.jpg" alt=""
-                                    width="272" height="288" />
+                              <article
+                                class="thumbnail thumbnail-mary thumbnail-xxs"
+                              >
+                                <div class="thumbnail-mary-figure">
+                                  <img
+                                    src="images/portfolio/mycar.jpg"
+                                    alt=""
+                                  />
                                 </div>
-                                <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60"
-                                    href="images/grid-gallery-6-1200x800-original.jpg" data-lightgallery="item"><img
-                                      src="images/navbar-6-272x288.jpg" alt="" width="272" height="288" /></a>
-                                  <h6 class="thumbnail-mary-title"><a href="#">Project #6</a></h6>
+                                <div class="thumbnail-mary-caption">
+                                  <a
+                                    class="icon fl-bigmug-line-zoom60"
+                                    href="images/portfolio/mycar.jpg"
+                                    data-lightgallery="item"
+                                    ><img
+                                      src="images/portfolio/mycar.jpg"
+                                      alt=""
+                                  /></a>
+                                  <p class="thumbnail-mary-title">
+                                    <a href="#">MY CAR</a>
+                                  </p>
+                                </div>
+                              </article>
+                              <article
+                                class="thumbnail thumbnail-mary thumbnail-xxs"
+                              >
+                                <div class="thumbnail-mary-figure">
+                                  <img
+                                    src="images/portfolio/sploteam.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="thumbnail-mary-caption">
+                                  <a
+                                    class="icon fl-bigmug-line-zoom60"
+                                    href="images/portfolio/sploteam.jpg"
+                                    data-lightgallery="item"
+                                    ><img
+                                      src="images/portfolio/sploteam.jpg"
+                                      alt=""
+                                  /></a>
+                                  <p class="thumbnail-mary-title">
+                                    <a href="#">SPLOTEAM</a>
+                                  </p>
+                                </div>
+                              </article>
+                              <article
+                                class="thumbnail thumbnail-mary thumbnail-xxs"
+                              >
+                                <div class="thumbnail-mary-figure">
+                                  <img
+                                    src="images/portfolio/utg.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="thumbnail-mary-caption">
+                                  <a
+                                    class="icon fl-bigmug-line-zoom60"
+                                    href="images/portfolio/utg.jpg"
+                                    data-lightgallery="item"
+                                    ><img
+                                      src="images/portfolio/utg.jpg"
+                                      alt=""
+                                  /></a>
+                                  <p class="thumbnail-mary-title">
+                                    <a href="#">UTG AVIA</a>
+                                  </p>
                                 </div>
                               </article>
                             </div>
+                            <a
+                              id="navBtn"
+                              class="button button-primary"
+                              href="portfolio.html"
+                              target="_blank"
+                              data-caption-animate="fadeInUp"
+                              >Подробнее</a
+                            >
                           </div>
                         </li>
                       </ul>
-
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Связаться с нами</a>
+                    <li class="rd-nav-item">
+                      <a class="rd-nav-link" href="contact-us.html"
+                        >Связаться с нами</a
+                      >
                     </li>
-
                   </ul>
                 </div>
               </div>
@@ -399,6 +583,11 @@
               <div class="footer-brand"><a href="index.html">
                   <!-- <img src="images/logo-inverse-191x52.png" alt="" width="191" height="52" /> -->
                   <h2>Mobile Solutions</h2>
+                  <hr
+                  width="100%"
+                  text-align="center"
+                  style="margin-right: 0"
+                />
                 </a></div>
               <p class="text-width-medium">Наша компания специализируется на создании функционального, удобного и
                 надежного программного обеспечения для бизнеса любого уровня в любой сфере. В составе команды Mobile
@@ -487,8 +676,39 @@
   <!-- Global Mailform Output-->
   <div class="snackbars" id="form-output-global"></div>
   <!-- Javascript-->
-  <script src="js/core.min.js"></script>
-  <script src="js/script.js"></script>
+     <!--Multi Lang Plagin-->
+     <script src="./js/jquery.js"></script>
+     <script src="./js/d2s_lang.js"></script>
+     <script>
+       lang("lang", "data-lang", "body");
+ 
+       function setLang(setLang) {
+         $("body").data("lang-active", setLang);
+         lang("lang", "data-lang", "body");
+       }
+     </script>
+ 
+     <script>
+       function changeRuButton() {
+         let button_ru = document.getElementById("button-ru");
+         let button_eng = document.getElementById("button-eng");
+         button_ru.style.cssText = "background: #584cdf; color: whitesmoke; ";
+         button_eng.style.cssText =
+           "background: #efefef; color: black; #button-eng:hover {background: #584cdf; color: whitesmoke;}";
+       }
+     </script>
+     <script>
+       function changeEngButton() {
+         let button_ru = document.getElementById("button-ru");
+         let button_eng = document.getElementById("button-eng");
+         button_eng.style.cssText = "background: #584cdf; color: whitesmoke";
+         button_ru.style.cssText =
+           "background: #efefef; color: black; #button-ru:hover {background: #584cdf; color: whitesmoke;}";
+       }
+     </script>
+     <!-------------------------------- -->
+     <script src="js/core.min.js"></script>
+     <script src="js/script.js"></script>
 </body>
 
 </html>
