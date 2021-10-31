@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Contacts Us 2</title>
+    <title>About Us</title>
     <meta name="format-detection" content="telephone=no" />
     <meta
       name="viewport"
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      #button-ru {
+      #button-eng {
         background: #584cdf;
         color: whitesmoke;
       }
@@ -42,6 +42,21 @@
         border: none;
         transition: 0.3s ease-in-out;
       }
+      .statistic {
+        margin-bottom: 70px;
+      }
+
+      .statisticTitle {
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+
+      .statisticText {
+        text-transform: lowercase;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
       .navbarTitle {
         color: #584cdf;
         font-weight: 800;
@@ -50,6 +65,14 @@
       #navBtn {
         font-size: 10px;
         padding: 8px;
+      }
+
+      #bossImg {
+        transition: 0.5s ease-in-out;
+      }
+
+      #bossImg:hover {
+        transform: scale(1.05);
       }
 
       .breadcrumbs-custom-title {
@@ -141,13 +164,13 @@
                   </button>
                   <!-- RD Navbar Brand-->
                   <div class="rd-navbar-brand">
-                    <a class="brand" href="index.html">
+                    <a class="brand" href="index_eng.html">
                       <!-- <img src="images/logo-default-191x52.png" alt="" width="191" height="52" /> -->
                       <h3 class="navbarTitle">Mobile Solutions</h3>
                     </a>
                   </div>
                   <div class="multiLang">
-                    <a href="contact-us.html">
+                    <a href="about-us.html">
                       <button
                         id="button-ru"
                         class="multiLang-button"
@@ -156,7 +179,7 @@
                         RU
                       </button>
                     </a>
-                    <a href="contact-us_eng.html">
+                    <a href="about-us_eng.html">
                       <button
                         id="button-eng"
                         class="multiLang-button"
@@ -176,64 +199,64 @@
                   <div class="rd-navbar-nav-wrap">
                     <ul class="rd-navbar-nav">
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="index.html">Главная</a>
+                        <a class="rd-nav-link" href="index_eng.html">Main</a>
+                      </li>
+                      <li class="rd-nav-item active">
+                        <a class="rd-nav-link" href="about-us_eng.html"
+                          >About Us</a
+                        >
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="about-us.html">О нас</a>
-                      </li>
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="portfolio.html"
-                          >Портфолио</a
+                        <a class="rd-nav-link" href="portfolio_eng.html"
+                          >Portfolio</a
                         >
 
                         <!-- RD Navbar Dropdown-->
                         <ul class="rd-menu rd-navbar-megamenu">
                           <li class="rd-megamenu-item">
                             <div>
-                              <h5 class="rd-megamenu-title">
-                                Наши направления
-                              </h5>
+                              <h5 class="rd-megamenu-title">Our Directions</h5>
                               <ul class="rd-megamenu-list">
                                 <li class="rd-megamenu-list-item">
                                   <a
                                     class="rd-megamenu-list-link"
-                                    href="web.html"
+                                    href="web_eng.html"
                                     >Web App</a
                                   >
                                 </li>
                                 <li class="rd-megamenu-list-item">
                                   <a
                                     class="rd-megamenu-list-link"
-                                    href="android.html"
+                                    href="android_eng.html"
                                     >Android App</a
                                   >
                                 </li>
                                 <li class="rd-megamenu-list-item">
                                   <a
                                     class="rd-megamenu-list-link"
-                                    href="ios.html"
+                                    href="ios_eng.html"
                                     >IOS App</a
                                   >
                                 </li>
                                 <li class="rd-megamenu-list-item">
                                   <a
                                     class="rd-megamenu-list-link"
-                                    href="ux.html"
+                                    href="ux_eng.html"
                                     >UX Design</a
                                   >
                                 </li>
                                 <li class="rd-megamenu-list-item">
                                   <a
                                     class="rd-megamenu-list-link"
-                                    href="logo.html"
+                                    href="logo_eng.html"
                                     >Logo</a
                                   >
                                 </li>
                                 <li class="rd-megamenu-list-item">
                                   <a
                                     class="rd-megamenu-list-link"
-                                    href="devops.html"
-                                    >Поддержка DevOps</a
+                                    href="devops_eng.html"
+                                    >DevOps Support</a
                                   >
                                 </li>
                               </ul>
@@ -241,7 +264,7 @@
                           </li>
                           <li class="rd-megamenu-item rd-megamenu-carousel">
                             <div>
-                              <h4 class="rd-megamenu-title">Наши проекты</h4>
+                              <h4 class="rd-megamenu-title">Our Projects</h4>
 
                               <!-- Owl Carousel-->
                               <div
@@ -400,15 +423,15 @@
                                 href="portfolio.html"
                                 target="_blank"
                                 data-caption-animate="fadeInUp"
-                                >Подробнее</a
+                                >More Details</a
                               >
                             </div>
                           </li>
                         </ul>
                       </li>
-                      <li class="rd-nav-item active">
+                      <li class="rd-nav-item">
                         <a class="rd-nav-link" href="contact-us.html"
-                          >Связаться с нами</a
+                          >Contact Us</a
                         >
                       </li>
                     </ul>
@@ -423,7 +446,7 @@
       <section class="breadcrumbs-custom-inset">
         <div class="breadcrumbs-custom">
           <div class="container">
-            <h1 class="breadcrumbs-custom-title">Контакты</h1>
+            <h1 class="breadcrumbs-custom-title">About Us</h1>
           </div>
           <div
             class="box-position"
@@ -431,142 +454,246 @@
           ></div>
         </div>
       </section>
-      <!-- Contact information-->
-      <section class="section section-sm section-first bg-default">
+      <!-- Why choose us-->
+      <section class="section section-sm section-first bg-default text-md-left">
         <div class="container">
-          <div class="row row-30 justify-content-center">
-            <div class="col-sm-8 col-md-6 col-lg-4">
-              <article class="box-contacts">
-                <div class="box-contacts-body">
-                  <div
-                    class="box-contacts-icon fl-bigmug-line-cellphone55"
-                  ></div>
-                  <div class="box-contacts-decor"></div>
-                  <p class="box-contacts-link">
-                    <a href="tel:#">+1 323-913-4688</a>
-                  </p>
-                  <p class="box-contacts-link">
-                    <a href="tel:#">+1 323-888-4554</a>
-                  </p>
-                </div>
-              </article>
+          <div class="row row-50 justify-content-center align-items-xl-center">
+            <div class="col-md-10 col-lg-5 col-xl-6">
+              <img
+                src="images/about-1-519x564.jpg"
+                alt=""
+                width="519"
+                height="564"
+              />
             </div>
-            <div class="col-sm-8 col-md-6 col-lg-4">
-              <article class="box-contacts">
-                <div class="box-contacts-body">
-                  <div class="box-contacts-icon fl-bigmug-line-up104"></div>
-                  <div class="box-contacts-decor"></div>
-                  <p class="box-contacts-link">
-                    <a href="#"
-                      >4730 Crystal Springs Dr, Los Angeles, CA 90027</a
+            <div class="col-md-10 col-lg-7 col-xl-6">
+              <h2 class="text-spacing-25 font-weight-normal title-opacity-9">
+                Why choose us
+              </h2>
+              <!-- Bootstrap tabs-->
+              <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-4">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link active"
+                      href="#tabs-4-1"
+                      data-toggle="tab"
+                      >Experience</a
                     >
-                  </p>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#tabs-4-2" data-toggle="tab"
+                      >Skill</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#tabs-4-3" data-toggle="tab"
+                      >Goal</a
+                    >
+                  </li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-4-1">
+                    <p>
+                      The professional team of Mobile Solutions unites highly
+                      qualified software developers products: architects,
+                      analysts, programmers, testers, systems engineers and
+                      managers. All of our specialists have many years of
+                      experience in implementation and launch major
+                      international and Russian projects.
+                    </p>
+                    <div class="text-center text-sm-left offset-top-30">
+                      <ul
+                        class="
+                          row-16
+                          list-0
+                          list-custom
+                          list-marked
+                          list-marked-sm
+                          list-marked-secondary
+                        "
+                      >
+                        <li>WEB Apps</li>
+                        <li>iOS Apps</li>
+                        <li>UX and Design</li>
+                        <li>Android Apps</li>
+                        <li>DevOps</li>
+                        <li>Logo</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-4-2">
+                    <p>
+                      The Mobile Solutions team is capable of developing and
+                      launching highly loaded fault-tolerant software of any
+                      complexity on platforms with broad functionality and the
+                      ability to integrate with other systems. We know how
+                      combine new solutions with existing business processes,
+                      making them accessible and convenient for employees and
+                      clients. We quickly connect to the implementation of the
+                      delivered tasks at any stage.
+                    </p>
+                    <div class="text-center text-sm-left offset-top-30">
+                      <ul
+                        class="
+                          row-16
+                          list-0
+                          list-custom
+                          list-marked
+                          list-marked-sm
+                          list-marked-secondary
+                        "
+                      >
+                        <li>WEB Apps</li>
+                        <li>iOS Apps</li>
+                        <li>UX and Design</li>
+                        <li>Android Apps</li>
+                        <li>DevOps</li>
+                        <li>Logo</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-4-3">
+                    <p>
+                      We will create reliable and functional web applications,
+                      applications based on Android, IOS and MacOS. Doing UX
+                      development, development of logos, we carry out DevOps
+                      support. We guarantee high quality performance,
+                      uniqueness, customer service. Our work is distinguished by
+                      openness, honesty, creative approach, a clear balance of
+                      speed and quality of development.
+                    </p>
+                    <div class="text-center text-sm-left offset-top-30">
+                      <ul
+                        class="
+                          row-16
+                          list-0
+                          list-custom
+                          list-marked
+                          list-marked-sm
+                          list-marked-secondary
+                        "
+                      >
+                        <li>WEB Apps</li>
+                        <li>iOS Apps</li>
+                        <li>UX and Design</li>
+                        <li>Android Apps</li>
+                        <li>DevOps</li>
+                        <li>Logo</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </article>
-            </div>
-            <div class="col-sm-8 col-md-6 col-lg-4">
-              <article class="box-contacts">
-                <div class="box-contacts-body">
-                  <div class="box-contacts-icon fl-bigmug-line-chat55"></div>
-                  <div class="box-contacts-decor"></div>
-                  <p class="box-contacts-link">
-                    <a href="mailto:#">mail@demolimk.org</a>
-                  </p>
-                  <p class="box-contacts-link">
-                    <a href="mailto:#">info@demolimk.org</a>
-                  </p>
-                </div>
-              </article>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Contact Form and Gmap-->
-      <section class="section section-sm section-last bg-default text-md-left">
-        <div class="container">
-          <div class="row row-50">
-            <div class="col-lg-6 section-map-small">
-              <!--Google Map-->
-              <section class="section" id="contacts">
-                <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
-                <!--Please note that YOUR_API_KEY should replaced with your key.-->
-                <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
-              </section>
+      <!-- Latest Projects-->
+      <section class="section section-sm section-fluid bg-default">
+        <div class="container-fluid">
+          <h2>Our Team</h2>
+          <!-- Team #3-->
+          <section class="section section-sm bg-default">
+            <div class="container">
+              <div class="row row-sm row-30">
+                <div class="col-md-6 col-lg-5 col-xl-6">
+                  <!-- Team Creative-->
+                  <article class="team-creative">
+                    <a class="team-creative-figure" href="#"
+                      ><img
+                        src="images/team-5-370x366.jpg"
+                        alt=""
+                        width="370"
+                        height="366"
+                        id="bossImg"
+                    /></a>
+                    <div class="team-creative-caption">
+                      <h5 class="team-creative-name">
+                        <a href="#">Ryan Wilson</a>
+                      </h5>
+                      <p class="team-creative-status">Director of Production</p>
+                      <div class="team-creative-decor-bottom"></div>
+                      <div class="team-creative-decor-left"></div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-6">
+                  <!-- Team Creative-->
+                  <article class="team-creative">
+                    <a class="team-creative-figure" href="#"
+                      ><img
+                        src="images/team-6-370x366.jpg"
+                        alt=""
+                        width="370"
+                        height="366"
+                        id="bossImg"
+                    /></a>
+                    <div class="team-creative-caption">
+                      <h5 class="team-creative-name">
+                        <a href="#">Mary Lee</a>
+                      </h5>
+                      <p class="team-creative-status">Software Developer</p>
+                      <div class="team-creative-decor-bottom"></div>
+                      <div class="team-creative-decor-left"></div>
+                    </div>
+                  </article>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-12">
-              <h4 class="text-spacing-50">Напишите нам</h4>
-              <form
-                class="rd-form rd-mailform"
-                data-form-output="form-output-global"
-                data-form-type="contact"
-                method="post"
-                action="bat/rd-mailform.php"
-              >
-                <div class="row row-14 gutters-14">
-                  <div class="col-sm-6">
-                    <div class="form-wrap">
-                      <input
-                        class="form-input"
-                        id="contact-first-name"
-                        type="text"
-                        name="name"
-                        data-constraints="@Required"
-                      />
-                      <label class="form-label" for="contact-first-name"
-                        >Имя</label
-                      >
+          </section>
+        </div>
+      </section>
+
+      <!-- Counter Classic-->
+      <section class="section section-fluid bg-default statistic">
+        <div class="container-fluid">
+          <div
+            class="parallax-container"
+            data-parallax-img="images/bg-counter-2.jpg"
+          >
+            <div class="parallax-content section-xl">
+              <div class="container">
+                <div class="row row-50 justify-content-center border-classic">
+                  <div class="col-sm-6 col-md-5 col-lg-3">
+                    <div class="counter-classic">
+                      <div class="counter-classic-number">
+                        <p class="statisticText">more</p>
+                        <span class="counter">20</span>
+                      </div>
+                      <h4 class="counter-classic-title statisticTitle">
+                        developers
+                      </h4>
                     </div>
                   </div>
-                  <div class="col-sm-6">
-                    <div class="form-wrap">
-                      <input
-                        class="form-input"
-                        id="contact-last-name"
-                        type="text"
-                        name="name"
-                        data-constraints="@Required"
-                      />
-                      <label class="form-label" for="contact-last-name"
-                        >Фамилия</label
-                      >
+                  <div class="col-sm-6 col-md-5 col-lg-3">
+                    <div class="counter-classic">
+                      <div class="counter-classic-number">
+                        <p class="statisticText">more</p>
+                        <span class="counter">30</span>
+                      </div>
+                      <h4 class="counter-classic-title statisticTitle">
+                        projects
+                      </h4>
                     </div>
                   </div>
-                  <div class="col-12">
-                    <div class="form-wrap">
-                      <input
-                        class="form-input"
-                        id="contact-email"
-                        type="email"
-                        name="email"
-                        data-constraints="@Email @Required"
-                      />
-                      <label class="form-label" for="contact-email"
-                        >E-mail</label
-                      >
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-wrap">
-                      <label class="form-label" for="contact-message"
-                        >Текст</label
-                      >
-                      <textarea
-                        class="form-input"
-                        id="contact-message"
-                        name="message"
-                        data-constraints="@Required"
-                      ></textarea>
+                  <div class="col-sm-6 col-md-5 col-lg-3">
+                    <div class="counter-classic">
+                      <div class="counter-classic-number">
+                        <p class="statisticText">more</p>
+                        <span class="counter">10</span
+                        ><span class="symbol"></span>
+                      </div>
+                      <h4 class="counter-classic-title statisticTitle">
+                        years experience
+                      </h4>
                     </div>
                   </div>
                 </div>
-                <button
-                  class="button button-primary button-pipaluk"
-                  type="submit"
-                >
-                  Send Message
-                </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -579,7 +706,7 @@
             <div class="col-md-10 col-lg-12 col-xl-4 wow fadeInRight">
               <div class="box-footer box-footer-small">
                 <div class="footer-brand">
-                  <a href="index.html">
+                  <a href="index_eng.html">
                     <!-- <img src="images/logo-inverse-191x52.png" alt="" width="191" height="52" /> -->
                     <h2>Mobile Solutions</h2>
                     <hr
@@ -590,16 +717,16 @@
                   </a>
                 </div>
                 <p class="text-width-medium">
-                  Наша компания занимается разработкой качественного и надежного
-                  программного обеспечения для корпоративных нужд с 2011 года.
-                  Мы - известные профессионалы в области разработки программного
-                  обеспечения.
+                  Our company specializes on creating functional, convenient and
+                  reliable business software any level in any area. As part of
+                  the Mobile team Solutions only highly qualified specialists
+                  with experience in implementing large international projects.
                 </p>
                 <div class="contact-classic">
                   <div class="contact-classic-item">
                     <div class="unit unit-spacing-md align-items-center">
                       <div class="unit-left">
-                        <h6 class="contact-classic-title">АДРЕС</h6>
+                        <h6 class="contact-classic-title">Adress</h6>
                       </div>
                       <div class="unit-body contact-classic-link">
                         <a href="#"
@@ -611,7 +738,7 @@
                   <div class="contact-classic-item">
                     <div class="unit unit-spacing-md align-items-center">
                       <div class="unit-left">
-                        <h6 class="contact-classic-title">ТЕЛЕФОНЫ</h6>
+                        <h6 class="contact-classic-title">Phones</h6>
                       </div>
                       <div class="unit-body contact-classic-link">
                         <a href="tel:#">+1 323-913-4688</a>,
@@ -633,53 +760,87 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
-            <div class="box-footer">
-              <h3 class="font-weight-normal">Вопросы? Напишите нам</h3>
-              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact"
-                method="post" action="bat/rd-mailform.php">
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-name-6" type="text" name="name" data-constraints="@Required" />
-                  <label class="form-label" for="contact-name-6">Имя</label>
-                </div>
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-email-6" type="email" name="email"
-                    data-constraints="@Email @Required" />
-                  <label class="form-label" for="contact-email-6">E-mail</label>
-                </div>
-                <div class="form-wrap">
-                  <label class="form-label" for="contact-message-6">Сообщение</label>
-                  <textarea class="form-input" id="contact-message-6" name="message"
-                    data-constraints="@Required"></textarea>
-                </div>
-                <button class="button button-block button-primary" type="submit">Отправить Сообщение</button>
-              </form>
+            <div
+              class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight"
+              data-wow-delay=".1s"
+            >
+              <div class="box-footer">
+                <h3 class="font-weight-normal">Questions? Write to us</h3>
+                <form
+                  class="rd-form rd-mailform"
+                  data-form-output="form-output-global"
+                  data-form-type="contact"
+                  method="post"
+                  action="bat/rd-mailform.php"
+                >
+                  <div class="form-wrap">
+                    <input
+                      class="form-input"
+                      id="contact-name-6"
+                      type="text"
+                      name="name"
+                      data-constraints="@Required"
+                    />
+                    <label class="form-label" for="contact-name-6">Name</label>
+                  </div>
+                  <div class="form-wrap">
+                    <input
+                      class="form-input"
+                      id="contact-email-6"
+                      type="email"
+                      name="email"
+                      data-constraints="@Email @Required"
+                    />
+                    <label class="form-label" for="contact-email-6"
+                      >E-mail</label
+                    >
+                  </div>
+                  <div class="form-wrap">
+                    <label class="form-label" for="contact-message-6"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-input"
+                      id="contact-message-6"
+                      name="message"
+                      data-constraints="@Required"
+                    ></textarea>
+                  </div>
+                  <button
+                    class="button button-block button-primary"
+                    type="submit"
+                  >
+                    Send message
+                  </button>
+                </form>
+              </div>
             </div>
-          </div> -->
             <div
               class="col-md-10 col-lg-6 col-xl-4 wow fadeInRight"
               data-wow-delay=".2s"
             >
               <div class="box-footer">
-                <h3 class="font-weight-normal">Что мы предлагаем</h3>
+                <h3 class="font-weight-normal">What we offer</h3>
                 <ul class="footer-list-category">
                   <li class="heading-4">
-                    <a href="web.html">Web разработка<span></span></a>
+                    <a href="web_eng.html">Web development<span></span></a>
                   </li>
                   <li class="heading-4">
-                    <a href="android.html">Android разработка<span></span></a>
+                    <a href="android_eng.html"
+                      >Android development<span></span
+                    ></a>
                   </li>
                   <li class="heading-4">
-                    <a href="ios.html">IOS разработка<span></span></a>
+                    <a href="ios_eng.html">iOS development<span></span></a>
                   </li>
                   <li class="heading-4">
-                    <a href="ux.html">UX Разработка<span></span></a>
+                    <a href="ux_eng.html">UX Design<span></span></a>
                   </li>
                   <li class="heading-4">
-                    <a href="logo.html">Создание Логотипа<span></span></a>
+                    <a href="logo_eng.html">Logo Design<span></span></a>
                   </li>
                   <li class="heading-4">
-                    <a href="devops.html">DevOps Поддержка<span></span></a>
+                    <a href="devops_eng.html">DevOps Support<span></span></a>
                   </li>
                 </ul>
               </div>

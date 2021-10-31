@@ -23,6 +23,14 @@
         background: #584cdf;
         color: whitesmoke;
       }
+      #button-eng:hover{
+        background: #584cdf;
+        color: whitesmoke;
+      }
+      #button-ru:hover{
+        background: #584cdf;
+        color: whitesmoke;
+      }
       .multiLang {
         position: absolute;
         right: 0;
@@ -160,20 +168,24 @@
                   </a>
                 </div>
                 <div class="multiLang">
-                  <button
+                  <a href="ios.html">
+                    <button
                     id="button-ru"
                     class="multiLang-button"
-                    onclick="setLang('ru');changeRuButton()"
+                    onclick="changeRuButton()"
                   >
                     RU
                   </button>
+                  </a>
+                  <a href="ios_eng.html">
                   <button
                     id="button-eng"
                     class="multiLang-button"
-                    onclick="setLang('eng');changeEngButton();"
+                    onclick="changeEngButton()"
                   >
                     ENG
                   </button>
+                </a>
                   <hr
                     width="150%"
                     text-align="center"

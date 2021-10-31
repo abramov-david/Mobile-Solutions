@@ -10,6 +10,14 @@ function dataEng() {
   document.getElementById("contact_us").innerHTML = "Contact Us";
 
   //INDEX
+  document.getElementById("useful_ap").innerHTML = "Useful Apps";
+
+  document.getElementById("useful_ap_text").innerHTML =
+    "Our products always work for the result. They are reliable" +
+    "exclusive, intuitive for users, different" +
+    " wide integration, functionality and modern design." +
+    "We help businesses grow and earn money.";
+
   document.getElementById("devMobApp").innerHTML = "Mobile App Development";
 
   document.getElementById("devMobApp_text").innerHTML =
@@ -28,14 +36,6 @@ function dataEng() {
     "Russian projects. Our company is distinguished by the highest" +
     "level, creativity, flexibility, openness," +
     "honesty, focus on impeccable quality and the desire to make the impossible possible.";
-
-  document.getElementById("index_useful_apps").innerHTML = "Useful Apps";
-
-  document.getElementById("index_useful_apps_text").innerHTML =
-    "Our products always work for the result. They are reliable" +
-    "exclusive, intuitive for users, different" +
-    " wide integration, functionality and modern design." +
-    "We help businesses grow and earn money.";
 
   document.getElementById("web_apps").innerHTML = "Web Apps";
 

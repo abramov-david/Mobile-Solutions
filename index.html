@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="en">
+<html class="wide wow-animation" lang="">
   <head>
     <title>Home</title>
     <meta name="format-detection" content="telephone=no" />
@@ -29,6 +29,14 @@
     <link rel="stylesheet" href="css/index.css" />
     <style>
       #button-ru {
+        background: #584cdf;
+        color: whitesmoke;
+      }
+      #button-eng:hover{
+        background: #584cdf;
+        color: whitesmoke;
+      }
+      #button-ru:hover{
         background: #584cdf;
         color: whitesmoke;
       }
@@ -156,13 +164,16 @@
                     </a>
                   </div>
                   <div class="multiLang">
-                    <button
+                    <a href="index.html">
+                      <button
                       id="button-ru"
                       class="multiLang-button"
                       onclick="changeRuButton()"
                     >
                       RU
                     </button>
+                    </a>
+                    <a href="index_eng.html">
                     <button
                       id="button-eng"
                       class="multiLang-button"
@@ -170,6 +181,7 @@
                     >
                       ENG
                     </button>
+                  </a>
                     <hr
                       width="150%"
                       text-align="center"
@@ -523,11 +535,13 @@
           >
             <div class="swiper-slide-caption section-md">
               <div class="container">
-                <h1 id="index_useful_apps" data-caption-animate="fadeInLeft" data-caption-delay="0" >
+                <div>
+                <h1  id="useful_ap" data-caption-animate="fadeInLeft" data-caption-delay="0" >
                   Полезные приложения
                 </h1>
+              </div>
                 <p
-                id="index_useful_apps_text"
+                id="useful_ap_text"
                   class="text-width-large sliderText"
                   data-caption-animate="fadeInRight"
                   data-caption-delay="100"
@@ -704,12 +718,10 @@
                   обеспечение для ваших целей.
                 </p>
                 <a
-                id="index_our_projects"
                   class="button button-secondary button-pipaluk"
                   href="portfolio.html"
                   target="_blank"
-                  >Наши проекты</a
-                >
+                  ><span id="index_our_projects">Наши проекты</span></a>
               </div>
             </div>
           </div>
