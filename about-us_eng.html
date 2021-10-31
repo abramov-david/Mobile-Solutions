@@ -61,6 +61,11 @@
         color: #584cdf;
         font-weight: 800;
       }
+      @media screen and (max-width: 900px) {
+        #smallSize{
+        font-size: 20px !important;
+      }
+    }
 
       #navBtn {
         font-size: 10px;
@@ -158,7 +163,7 @@
                   <!-- RD Navbar Toggle-->
                   <button
                     class="rd-navbar-toggle"
-                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                    data-rd-navbar-toggle="rd-navbar-nav-wrap"
                   >
                     <span></span>
                   </button>
@@ -166,7 +171,7 @@
                   <div class="rd-navbar-brand">
                     <a class="brand" href="index_eng.html">
                       <!-- <img src="images/logo-default-191x52.png" alt="" width="191" height="52" /> -->
-                      <h3 class="navbarTitle">Mobile Solutions</h3>
+                      <p class="navbarTitle" id="smallSize">Mobile Solutions</p>
                     </a>
                   </div>
                   <div class="multiLang">
@@ -863,13 +868,6 @@
     <!--Multi Lang Plagin-->
     <script src="./js/jquery.js"></script>
     <script src="./js/d2s_lang.js"></script>
-    <script>
-      lang("lang", "data-lang", "body");
-
-      function setLang(setLang) {
-        $("body").data("lang-active", setLang);
-        lang("lang", "data-lang", "body");
-      }
     </script>
 
     <script>
@@ -886,11 +884,10 @@
         let button_ru = document.getElementById("button-ru");
         let button_eng = document.getElementById("button-eng");
         button_eng.style.cssText = "background: #584cdf; color: whitesmoke";
-        button_ru.style.cssText =
-          "background: #efefef; color: black; #button-ru:hover {background: #584cdf; color: whitesmoke;}";
+        button_ru.style.cssText ="background: #efefef; color: black; #button-ru:hover {background: #584cdf; color: whitesmoke;}";
       }
     </script>
-    <!-------------------------------- -->
+    
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
   </body>
