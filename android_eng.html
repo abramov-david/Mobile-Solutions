@@ -41,9 +41,15 @@
         border: none;
         transition: 0.3s ease-in-out;
       }
-    .navbarTitle {
-      color: #584cdf;
-      font-weight: 800;
+      .navbarTitle {
+        color: #584cdf;
+        font-size: 33px;
+        font-weight: 800;
+      }
+      @media screen and (max-width: 900px) {
+        #smallSize{
+        font-size: 20px !important;
+      }
     }
 
     .serviceList a {
@@ -52,11 +58,6 @@
 
     #subTitle {
       font-size: 1.5rem;
-    }
-    @media screen and (max-width: 900px) {
-        #smallSize{
-        font-size: 20px !important;
-      }
     }
 
     .breadcrumbs-custom-title {
