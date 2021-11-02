@@ -111,7 +111,7 @@
         display: block;
       }
     </style>
-    <script src="./js/eng_script.js"></script>
+    <script src="./script.js"></script>
   </head>
 
   <body onload="changeToEng()">
@@ -929,6 +929,12 @@
                   method="post"
                   action="bat/rd-mailform.php"
                 >
+
+<!-- Hidden Required Fileds -->
+<input type="hidden" name="project name" value="Mobile Solution">
+<input type="hidden" name="admin_email" value="FATE_1992@mail.ru">
+<input type="hidden" name="form_subject" value="Form Subject">
+
                   <div class="form-wrap">
                     <input
                       class="form-input"
@@ -1038,5 +1044,6 @@
     <!-- Core -->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+
   </body>
 </html>
