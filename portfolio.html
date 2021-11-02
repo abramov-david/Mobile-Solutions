@@ -803,7 +803,7 @@
                   data-form-output="form-output-global"
                   data-form-type="contact"
                   method="post"
-                  action="bat/rd-mailform.php"
+                  action="https://formsubmit.co/FATE_1992@mail.ru"
                 >
                   <div class="form-wrap">
                     <input
@@ -813,7 +813,12 @@
                       name="name"
                       data-constraints="@Required"
                     />
-                    <label class="form-label" for="contact-name-6">Имя</label>
+                    <label
+                      class="form-label"
+                      for="contact-name-6"
+                      id="footer_form_name"
+                      >Имя</label
+                    >
                   </div>
                   <div class="form-wrap">
                     <input
@@ -828,7 +833,10 @@
                     >
                   </div>
                   <div class="form-wrap">
-                    <label class="form-label" for="contact-message-6"
+                    <label
+                      class="form-label"
+                      for="contact-message-6"
+                      id="footer_form_mess"
                       >Сообщение</label
                     >
                     <textarea
@@ -839,6 +847,7 @@
                     ></textarea>
                   </div>
                   <button
+                    id="footer_send_mess"
                     class="button button-block button-primary"
                     type="submit"
                   >
