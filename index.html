@@ -111,10 +111,6 @@
         display: block;
       }
     </style>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-    crossorigin="anonymous"></script>
     <script src="./script.js"></script>
   </head>
 
@@ -927,13 +923,17 @@
               <div class="box-footer">
                 <h3 class="font-weight-normal" id="footer_quest">Вопросы? Напишите нам</h3>
                 <form
-                enctype=”multipart/form-data”
                   class="rd-form rd-mailform"
                   data-form-output="form-output-global"
                   data-form-type="contact"
-                  method="POST"
-                  action="mailto:FATE_1992@mail.ru"
+                  method="post"
+                  action="mail.php"
                 >
+
+<!-- Hidden Required Fileds -->
+<input type="hidden" name="project name" value="Mobile Solution">
+<input type="hidden" name="admin_email" value="FATE_1992@mail.ru">
+<input type="hidden" name="form_subject" value="Form Subject">
 
                   <div class="form-wrap">
                     <input
@@ -1041,6 +1041,10 @@
           "background: #efefef; color: black; #button-ru:hover {background: #584cdf; color: whitesmoke;}";
       }
     </script>
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
     <!-- Core -->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
