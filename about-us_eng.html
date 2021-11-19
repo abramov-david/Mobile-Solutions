@@ -227,7 +227,7 @@ font-size: 17px !important;
                         <ul class="rd-menu rd-navbar-megamenu">
                           <li class="rd-megamenu-item">
                             <div>
-                              <h5 class="rd-megamenu-title">Our Directions</h5>
+                              <h4 class="rd-megamenu-title">Our Directions</h4>
                               <ul class="rd-megamenu-list">
                                 <li class="rd-megamenu-list-item">
                                   <a
@@ -780,19 +780,17 @@ font-size: 17px !important;
               <div class="box-footer">
                 <h3 class="font-weight-normal">Questions? Write to us</h3>
                 <form
-                class="rd-form rd-mailform"
-                data-form-output="form-output-global"
-                data-form-type="contact"
-                method="post"
-                action='https://formsubmit.co/anton.maltsev@gmail.com'
+                  method="POST"
+                  action="https://formsubmit.co/anton.maltsev@gmail.com"
                 >
+					<input type="hidden" name="_next" value="http://mob-solutions.com/send-message-status_eng.html">
                   <div class="form-wrap">
                     <input
                       class="form-input"
                       id="contact-name-6"
                       type="text"
                       name="name"
-                      data-constraints="@Required"
+                      required
                     />
                     <label class="form-label" for="contact-name-6">Name</label>
                   </div>
@@ -802,7 +800,7 @@ font-size: 17px !important;
                       id="contact-email-6"
                       type="email"
                       name="email"
-                      data-constraints="@Email @Required"
+                      required
                     />
                     <label class="form-label" for="contact-email-6"
                       >E-mail</label
@@ -816,14 +814,14 @@ font-size: 17px !important;
                       class="form-input"
                       id="contact-message-6"
                       name="message"
-                      data-constraints="@Required"
+                      required
                     ></textarea>
                   </div>
                   <button
                     class="button button-block button-primary"
-                    type="submit"
+                    type="submit"              
                   >
-                    Send message
+                    Send Message
                   </button>
                 </form>
               </div>

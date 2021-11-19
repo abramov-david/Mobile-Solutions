@@ -506,26 +506,23 @@
             <div class="col-lg-12">
               <h4 class="text-spacing-50">Напишите нам</h4>
               <form
-                class="rd-form rd-mailform"
-                data-form-output="form-output-global"
-                data-form-type="contact"
-                method="post"
+                method="POST"
                 action="https://formsubmit.co/anton.maltsev@gmail.com"
               >
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://mob-solutions.com/send-message-status.html"
+                />
                 <div class="form-wrap">
                   <input
                     class="form-input"
                     id="contact-name-6"
                     type="text"
                     name="name"
-                    data-constraints="@Required"
+                    required
                   />
-                  <label
-                    class="form-label"
-                    for="contact-name-6"
-                    id="footer_form_name"
-                    >Имя</label
-                  >
+                  <label class="form-label" for="contact-name-6">Имя</label>
                 </div>
                 <div class="form-wrap">
                   <input
@@ -533,30 +530,26 @@
                     id="contact-email-6"
                     type="email"
                     name="email"
-                    data-constraints="@Email @Required"
+                    required
                   />
                   <label class="form-label" for="contact-email-6">E-mail</label>
                 </div>
                 <div class="form-wrap">
-                  <label
-                    class="form-label"
-                    for="contact-message-6"
-                    id="footer_form_mess"
+                  <label class="form-label" for="contact-message-6"
                     >Сообщение</label
                   >
                   <textarea
                     class="form-input"
                     id="contact-message-6"
                     name="message"
-                    data-constraints="@Required"
+                    required
                   ></textarea>
                 </div>
                 <button
-                  id="footer_send_mess"
                   class="button button-block button-primary"
                   type="submit"
                 >
-                  Отправить Сообщение
+                  Отправить сообщение
                 </button>
               </form>
             </div>

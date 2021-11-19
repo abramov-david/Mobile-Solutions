@@ -683,19 +683,21 @@ font-size: 17px !important;
             <div class="box-footer">
               <h3 class="font-weight-normal">Вопросы? Напишите нам</h3>
               <form
-                class="rd-form rd-mailform"
-                data-form-output="form-output-global"
-                data-form-type="contact"
-                method="post"
+                method="POST"
                 action="https://formsubmit.co/anton.maltsev@gmail.com"
               >
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://mob-solutions.com/send-message-status.html"
+                />
                 <div class="form-wrap">
                   <input
                     class="form-input"
                     id="contact-name-6"
                     type="text"
                     name="name"
-                    data-constraints="@Required"
+                    required
                   />
                   <label class="form-label" for="contact-name-6">Имя</label>
                 </div>
@@ -705,11 +707,9 @@ font-size: 17px !important;
                     id="contact-email-6"
                     type="email"
                     name="email"
-                    data-constraints="@Email @Required"
+                    required
                   />
-                  <label class="form-label" for="contact-email-6"
-                    >E-mail</label
-                  >
+                  <label class="form-label" for="contact-email-6">E-mail</label>
                 </div>
                 <div class="form-wrap">
                   <label class="form-label" for="contact-message-6"
@@ -719,7 +719,7 @@ font-size: 17px !important;
                     class="form-input"
                     id="contact-message-6"
                     name="message"
-                    data-constraints="@Required"
+                    required
                   ></textarea>
                 </div>
                 <button
